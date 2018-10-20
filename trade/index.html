@@ -11,6 +11,13 @@
 
 <style>
 
+	.links {
+		float: right;
+	}
+	.links a {
+		margin-left: 15px;
+	}
+	
 	.btn {
 		font-size: 2em;
 	}
@@ -52,40 +59,42 @@
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h5>Trade Central</h5>
+    <h5>Trade Central</h5> 
 	<hr />
 	<h3><span id="user">Braden Borman</span></h3> 
-    <h2>Capital available: <span id="cash">$87,000</span></h2> 
+    <h2>Capital available: <span id="cash">$100,000</span></h2> 
+		<div class="links">
+			<a href="../market/index.html">Market</a>
+			<a href="../market/index.html">My Portfolio</a>
+		</div>
   </div>
 </div>
 
  <div class="container">
 <div class="card">
   <div class="card-header"><h1>Missouri</h1><h3 id="costPerShare">$4,000</h3></div> <!-- TEAM NAME HERE -->
-  
-  
+ 
   <div class="card-body">
   <h6 class="card-title">Slide to the right to increase amount</h6><br />
 		<div class="row">
 			<div class="col-md-6">
-					<input onchange="updateBuyBTN(this.value)" class="slider" type="range" min="0" max="100" value="0" class="slider" id="buySlider">
+			<form action="php/buy.php" method="post" onsubmit="return validateForm()">
+					<input onchange="updateBuyBTN(this.value)" class="slider" type="range" min="0" max="100" value="0" class="slider" id="buySlider" name="value">
 			<br />
-			<button class="buy btn btn-default">Buy</button>
+			<button type="submit" class="buy btn btn-success">Buy</button>
+			</form>
 			</div>
-					
 			<div class="col-md-6">
-					<input onchange="updateSellBTN(this.value)" class="slider" type="range" min="0" max="0" value="0" class="slider" id="sellSlider">
+			<form action="php/sell.php" method="post" onsubmit="return validateForm()">		
+					<input onchange="updateSellBTN(this.value)" class="slider" type="range" min="0" max="0" value="0" class="slider" id="sellSlider" name="value">
 			<br />
-			<button class="sell btn btn-default">Sell</button>
+			<button type="submit" class="sell btn btn-success">Sell</button>
+			</form>
 			</div>
 		</div>
   
   </div>
-  
-  
-  
-  
-  
+    
 </div>
 </div>
 
@@ -112,27 +121,10 @@ function determineSliderValues() {
         });	
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function validateForm() {
+	//ajax for cash and return false if not a match
+	return false
+}
 	
 </script>
 </body>
