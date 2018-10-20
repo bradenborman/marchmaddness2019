@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<style>
+
+	.btn {
+		font-size: 2em;
+	}
+
+	button {
+		min-width: 160px;
+	}
+
+	.slider {
+		width: 80%;
+		margin-bottom: 30px;
+	}
+
+	#cash {
+		color: green;
+	}
+	
+	
+	@media screen and (max-width: 600px) {
+    .slider {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	button {
+		width: 60%;
+		margin: auto;
+		margin-bottom: 80px;
+	}
+}
+	
+	
+</style>
+
+
+  </head>
+  
+<body onload="determineSliderValues()">
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h5>Trade Central</h5>
+	<hr />
+	<h3><span id="user">Braden Borman</span></h3> 
+    <h2>Capital available: <span id="cash">$87,000</span></h2> 
+  </div>
+</div>
+
+ <div class="container">
+<div class="card">
+  <div class="card-header"><h1>Missouri</h1><h3 id="costPerShare">$4,000</h3></div> <!-- TEAM NAME HERE -->
+  
+  
+  <div class="card-body">
+  <h6 class="card-title">Slide to the right to increase amount</h6><br />
+		<div class="row">
+			<div class="col-md-6">
+					<input onchange="updateBuyBTN(this.value)" class="slider" type="range" min="0" max="100" value="0" class="slider" id="buySlider">
+			<br />
+			<button class="buy btn btn-default">Buy</button>
+			</div>
+					
+			<div class="col-md-6">
+					<input onchange="updateSellBTN(this.value)" class="slider" type="range" min="0" max="0" value="0" class="slider" id="sellSlider">
+			<br />
+			<button class="sell btn btn-default">Sell</button>
+			</div>
+		</div>
+  
+  </div>
+  
+  
+  
+  
+  
+</div>
+</div>
+
+<script>
+
+function updateBuyBTN(value) {
+	$(".buy").html("Buy: " + value);
+}
+
+function updateSellBTN(value) {
+	$(".sell").html("Sell: " + value);
+}
+
+function determineSliderValues() {	
+	var x = $("#cash").text()
+	var y = $("#costPerShare").text()
+	var cash = x.replace(/\D+/g, '');
+	var cost = y.replace(/\D+/g, '');
+	var maxBuy = Math.floor(parseInt(cash) / parseInt(cost))
+
+	$('#buySlider').prop({
+            'min': 0,
+            'max': maxBuy
+        });	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+</script>
+</body>
+</html>
