@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body onload="drawChart()">
+
+
+  <br /><br />
+
+<div class="container">
+<div class="card-deck">
+  
+  
+
+  <!-- TODO start loop with php and then print the following in right spot: TeamName | TeamName | CurrentPrice | TeamName | Values -->
+  
+  <div class="card">
+	  <h2 class="card-header">Missouri</h2>
+		<div class="card-img-top" id="Missouri"></div>
+		<div class="card-body">
+		  <!-- Links -->
+		  <p style="Font-size: 3em;">$3,556</p>
+		  <p style="Font-size: 1.7em;"><a href="#" class="card-link">Trade</a></p>
+		  <p class="hidden values">2200 5433 3556 4423 2233 2442</p>
+		
+		
+		</div>
+		<div class="card-footer">
+		  <small class="text-muted">Locked</small><!--PRINT OUT STATUS -->
+		</div>
+  </div>
+  
+   <div class="card">
+	  <h2 class="card-header">Duke</h2>
+		<div class="card-img-top" id="Duke"></div>
+		<div class="card-body">
+		  <!-- Links -->
+		  <p style="Font-size: 3em;">$4,500</p>
+		  <p style="Font-size: 1.7em;"><a href="#" class="card-link">Trade</a></p>
+		  <p class="hidden values">2200 3400 4200 6500 4500 4500</p>
+		
+		
+		</div>
+		<div class="card-footer">
+		  <small class="text-muted">Locked</small><!--PRINT OUT STATUS -->
+		</div>
+  </div>
+  
+  </div>
+  <br /><br />
+ <div class="card-deck"> 
+ 
+ 
+   <div class="card">
+	  <h2 class="card-header">UCLA</h2>
+		<div class="card-img-top" id="UCLA"></div>
+		<div class="card-body">
+		  <!-- Links -->
+		  <p style="Font-size: 3em;">$4,500</p>
+		  <p style="Font-size: 1.7em;"><a href="#" class="card-link">Trade</a></p>
+		  <p class="hidden values">2200 3400 4200 6500 4500 4500</p>
+		
+		
+		</div>
+		<div class="card-footer">
+		  <small class="text-muted">Locked</small><!--PRINT OUT STATUS -->
+		</div>
+  </div>
+  
+   <div class="card">
+	  <h2 class="card-header">Alabama</h2>
+		<div class="card-img-top" id="Alabama"></div>
+		<div class="card-body">
+		  <!-- Links -->
+		  <p style="Font-size: 3em;">$4,500</p>
+		  <p style="Font-size: 1.7em;"><a href="#" class="card-link">Trade</a></p>
+		  <p class="hidden values">2200 3400 4200 6500 4500 4500</p>
+		
+		
+		</div>
+		<div class="card-footer">
+		  <small class="text-muted">Locked</small><!--PRINT OUT STATUS -->
+		</div>
+  </div>
+  
+  
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      
+      function drawChart() {
+       
+	  	   
+		
+		$('.card').each(function (index, value) { 
+			var TeamName =$(this).find("h2").text()
+			var values =$(this).find(".values").text()
+			var valueArray = values.split(" ")
+	   
+				   
+		   var data = google.visualization.arrayToDataTable([
+			  ['Round', 'Value'],
+			  ['64',  parseInt(valueArray[0])],
+			  ['32',  parseInt(valueArray[1])],
+			  ['16',  parseInt(valueArray[2])],
+			  ['8',  parseInt(valueArray[3])],
+			  ['4',  parseInt(valueArray[4])],
+			  ['2',  parseInt(valueArray[5])]
+			]);
+
+			var options = {
+			  curveType: 'function',
+			  legend: { position: 'bottom' }
+			};
+
+			var chart = new google.visualization.LineChart(document.getElementById(TeamName));
+
+			chart.draw(data, options);
+		
+		});
+		
+}
+	  
+	  
+	  
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
