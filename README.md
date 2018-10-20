@@ -1,6 +1,11 @@
 "# marchmaddness2019" 
 
 
+	//TODO 
+			
+			Pull random quotes to display on log in page
+
+
 SQL's:
 
 	SELECT * FROM `Team` JOIN Price_History ON Team.Team_ID = Price_History.Team_ID
