@@ -1,0 +1,32 @@
+ .links {
+	 float: right;
+	 }
+	 .links a {
+	 margin-left: 15px;
+	 }
+	 .btn {
+	 font-size: 2em;
+	 }
+	 button {
+	 min-width: 160px;
+	 }
+	 .slider {
+	 width: 80%;
+	 margin-bottom: 30px;
+	 }
+	 #cash {
+	 color: green;
+	 }
+         
+		 
+		 @media screen and (max-width: 600px) {
+			 .slider {
+				 width: 100%;
+				 margin-bottom: 30px;
+			 }
+			 button {
+				 width: 60%;
+				 margin: auto;
+				 margin-bottom: 80px;
+			 }
+}

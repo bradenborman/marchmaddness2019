@@ -1,0 +1,95 @@
+ 
+  body {
+	background-color: #3D9970;
+  }
+  
+  .app {
+	border-radius: 40px;
+	background-color: white;
+	padding: 60px;
+  }
+  
+  input[type="text"] {
+	font-size: 2em;
+  }
+ 
+ .tab-content h2 {
+	margin-top: 40px;
+	font-family: 'Alfa Slab One';
+	text-align: center;
+ }
+
+	button {
+		margin-top: 16px;
+	}
+
+ 
+	.header {
+		padding: 50px;
+		height: 150px;
+		font-family: 'Alfa Slab One';
+		margin-bottom: 30px;
+	}
+	
+	.left {
+		padding: 20px 30px;
+	}
+		
+	.how2Play {
+		margin: auto;
+		float: right;
+		width: 94%;
+	}
+	
+	.how2Play h4 {
+		margin-top: 7px;
+		font-family: 'Alfa Slab One';
+	}
+
+	.login {
+		margin: auto;
+		margin-top: 50px;
+		width: 75%;
+	}
+	
+	@media screen and (max-width: 600px) {
+	
+	.app {
+	margin: auto;
+	border-radius: 0px;
+	background-color: white;
+	padding: 10%;
+	width: 100%;
+  }
+	
+	.how2Play {
+		margin: auto;
+		width: 98%;
+		float: none;
+		margin-top: 50px;
+	}
+	.login {
+		margin-top: 0px;
+		width: 94%;
+	}
+	
+	.left {
+		margin: 0px;
+	}
+	
+	.header {
+		margin-bottom: 95px;
+	}
+	
+	.tab-content h2 {
+		margin: 30px;
+		font-size: 1.3em;
+		font-family: 'Alfa Slab One';
+		text-align: center;
+ }
+ 
+	.header {
+		display: none;
+	}
+	
+}

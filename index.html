@@ -8,115 +8,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
-  
-  <style>
- 
-  body {
-	background-color: #3D9970;
-  }
-  
-  .app {
-	border-radius: 40px;
-	background-color: white;
-	padding: 60px;
-  }
-  
-  input[type="text"] {
-	font-size: 2em;
-  }
- 
- .tab-content h2 {
-	margin-top: 40px;
-	font-family: 'Alfa Slab One';
-	text-align: center;
- }
-
-	button {
-		margin-top: 16px;
-	}
-
- 
-	.header {
-		padding: 50px;
-		height: 150px;
-		font-family: 'Alfa Slab One';
-		margin-bottom: 30px;
-	}
-	
-	.left {
-		padding: 20px 30px;
-	}
-		
-	.how2Play {
-		margin: auto;
-		float: right;
-		width: 94%;
-	}
-	
-	.how2Play h4 {
-		margin-top: 7px;
-		font-family: 'Alfa Slab One';
-	}
-
-	.login {
-		margin: auto;
-		margin-top: 50px;
-		width: 75%;
-	}
-	
-	@media screen and (max-width: 600px) {
-	
-	.app {
-	margin: auto;
-	border-radius: 0px;
-	background-color: white;
-	padding: 10%;
-	width: 100%;
-  }
-	
-	.how2Play {
-		margin: auto;
-		width: 98%;
-		float: none;
-		margin-top: 50px;
-	}
-	.login {
-		margin-top: 0px;
-		width: 94%;
-	}
-	
-	.left {
-		margin: 0px;
-	}
-	
-	.header {
-		margin-bottom: 95px;
-	}
-	
-	.tab-content h2 {
-		margin: 30px;
-		font-size: 1.3em;
-		font-family: 'Alfa Slab One';
-		text-align: center;
- }
- 
-	.header {
-		display: none;
-	}
-	
-}
-	
-  </style>
-  
+	<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
 <body>
 
 <div class="container header">
 		<h1>Borman's March Madness Game</h1>
 </div>
-
-
 <div class="container app">
 <div class="row">
   <div class="col-md-6">
@@ -126,7 +25,6 @@
     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Log In</a>
   </div>
 </nav>
-
 	<div class="tab-content" id="nav-tabContent">
 	  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">			 
 				<form action="welcome.php" method="post">
@@ -144,12 +42,12 @@
 					</div>
 					<div class="col-md-12">
 						<div class="input-group mb-3">
-							<div class="input-group-prepend"><span class="input-group-text">Email</span></div><input type="email" class="form-control form-control-lg" name="email" id="email">
+							<div class="input-group-prepend"><span class="input-group-text">Email</span></div><input type="email" class="form-control form-control-lg" name="email_new" id="email_new">
 						</div>	
 					</div>			
 					<div class="col-md-12">
 						<div class="input-group mb-3">
-							<div class="input-group-prepend"><span class="input-group-text">Password</span></div><input type="password" class="form-control form-control-lg" name="password" id="password">
+							<div class="input-group-prepend"><span class="input-group-text">Password</span></div><input type="password" class="form-control form-control-lg" name="password_new" id="password_new">
 						</div>	
 					</div>	
 					<div class="col-md-12">
@@ -189,11 +87,10 @@
 	  </div>
 	</div>
   </div> <!-- END LEFT -->
- 
  <div class="col-md-6">
 	<div class="how2Play">
 		<div class="card">
-			<div class="card-header bg-success">
+			<div class="card-header">
 			<h4>How to play</h4>
 			</div>
 				<div class="card-body">
@@ -202,39 +99,34 @@
 				
 					<h6 class="card-title">Setup</h6>
 					<p class="card-text">
-					<ul>
-						<li>Each user that signs up is given <b>$100,000</b> of cash.</li>
-						<li>Every college team that made the turnement is now available to invest in.</li>
-						<li>Scout for potential <i>'Big Gainers'</i></li>
-					</ul>					
+						<ul>
+							<li>Each user that signs up is given <b>$100,000</b> of cash.</li>
+							<li>Every college team that made the turnement is now available to invest in.</li>
+							<li>Scout for potential <i>'Big Gainers'</i></li>
+						</ul>					
 					</p>
 					<h6 class="card-title">How to make $$</h6>
 					<p class="card-text">
-					<ul>
-						<li>Teams that advance will have thier value <b>increase</b></li>
-						<li>Purchase shares <b>before</b> games to capitalize on the rise</li>	
-						<li>When the team looses, thier value will <b>decrease</b></li>							
-					</ul>					
+						<ul>
+							<li>Teams that advance will have thier value <b>increase</b></li>
+							<li>Purchase shares <b>before</b> games to capitalize on the rise</li>	
+							<li>When the team looses, thier value will <b>decrease</b></li>							
+						</ul>					
 					</p>
 					<h6 class="card-title">Trading</h6>
 					<p class="card-text">
-					<ul>
-						<li>You may only buy the shares if you can afford to.</li>
-						<li>You may only sell shares you own.</li>
-						<li>Trading teams is only opened before the start of their respected game for the current round.</li>							
-					</ul>					
+						<ul>
+							<li>You may only buy the shares if you can afford to.</li>
+							<li>You may only sell shares you own.</li>
+							<li>Trading teams is only opened before the start of their respected game for the current round.</li>							
+						</ul>					
 					</p>
 				
 				</div>
 		</div>
 	</div>
-  
-
  </div>
- 
- 
- 
- 
+
 </div>
 </div>
 </body>
