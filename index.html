@@ -11,16 +11,26 @@
 <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
   
   <style>
-  
-  
+ 
   body {
-	background-color: #F0F8FF;
+	background-color: #3D9970;
+  }
+  
+  .app {
+	border-radius: 40px;
+	background-color: white;
+	padding: 60px;
   }
   
   input[type="text"] {
 	font-size: 2em;
   }
  
+ .tab-content h2 {
+	margin-top: 40px;
+	font-family: 'Alfa Slab One';
+	text-align: center;
+ }
 
 	button {
 		margin-top: 16px;
@@ -28,7 +38,7 @@
 
  
 	.header {
-		padding: 40px;
+		padding: 50px;
 		height: 150px;
 		font-family: 'Alfa Slab One';
 		margin-bottom: 30px;
@@ -43,6 +53,11 @@
 		float: right;
 		width: 94%;
 	}
+	
+	.how2Play h4 {
+		margin-top: 7px;
+		font-family: 'Alfa Slab One';
+	}
 
 	.login {
 		margin: auto;
@@ -51,6 +66,15 @@
 	}
 	
 	@media screen and (max-width: 600px) {
+	
+	.app {
+	margin: auto;
+	border-radius: 0px;
+	background-color: white;
+	padding: 10%;
+	width: 100%;
+  }
+	
 	.how2Play {
 		margin: auto;
 		width: 98%;
@@ -63,11 +87,22 @@
 	}
 	
 	.left {
-		margin-top: 0px;
+		margin: 0px;
 	}
 	
 	.header {
 		margin-bottom: 95px;
+	}
+	
+	.tab-content h2 {
+		margin: 30px;
+		font-size: 1.3em;
+		font-family: 'Alfa Slab One';
+		text-align: center;
+ }
+ 
+	.header {
+		display: none;
 	}
 	
 }
@@ -79,11 +114,12 @@
 
 <div class="container header">
 		<h1>Borman's March Madness Game</h1>
-		<a href="market/index.html">View Market</a>
 </div>
 
 
-<div class="container">
+<div class="container app">
+<div class="row">
+  <div class="col-md-6">
 <nav>
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Sign Up</a>
@@ -91,13 +127,10 @@
   </div>
 </nav>
 
-
-<div class="row">
-  <div class="col-md-6 card left"> <!-- LEFT -->
 	<div class="tab-content" id="nav-tabContent">
-	  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-				 <h2 style="text-align: center; margin-bottom: 30px;">New Users</h2>
+	  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">			 
 				<form action="welcome.php" method="post">
+				<h2 style="margin-bottom: 30px;">New Users</h2>
 				<div class="row">
 				<div class="col-md-12">
 						<div class="input-group mb-3">
@@ -132,7 +165,7 @@
 	  </div>
 	  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 	  <form action="welcome.php" method="post">
-	  <h2 style="text-align: center; margin-top: 30px;">Returning Users</h2> 
+	  <h2>Returning Users</h2> 
 	  <div class="row login">
 				<div class="col-md-12">
 						<div class="input-group mb-3">
@@ -151,7 +184,8 @@
 	  </div> 
 	  </form>
 	  <br /><br /><br />
-	  <p style="text-align: center; font-size: 1.3em;">"Price is what you pay. Value is what you get.”</p>
+	  <p style="text-align: center; font-size: 1.3em;">"Price is what you pay. Value is what you get.” <br /><a href="market/index.html">View Market</a></p>
+	  
 	  </div>
 	</div>
   </div> <!-- END LEFT -->
@@ -160,7 +194,7 @@
 	<div class="how2Play">
 		<div class="card">
 			<div class="card-header bg-success">
-			<h5>How to play</h5>
+			<h4>How to play</h4>
 			</div>
 				<div class="card-body">
 				
