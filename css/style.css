@@ -13,7 +13,7 @@
 	font-size: 2em;
   }
  
- .tab-content h2 {
+ .tab-content h2 { 
 	margin-top: 40px;
 	font-family: 'Alfa Slab One';
 	text-align: center;
@@ -25,11 +25,9 @@
 
  
 	.header {
-		padding: 50px;
-		height: 150px;
-		font-family: 'Alfa Slab One';
-		margin-bottom: 30px;
+			min-height: 200px;
 	}
+	
 	
 	.left {
 		padding: 20px 30px;
