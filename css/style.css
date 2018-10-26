@@ -25,9 +25,26 @@
 
  
 	.header {
-			min-height: 200px;
+			padding: 50px;
+			font-family: 'Alfa Slab One';
+			border-bottom: 5px solid black;
+			background: #075997;
+			min-height: 100px;
+			margin-bottom: 100px;
 	}
 	
+	.title {
+		display: inline-block;
+		font-size: 6vh;
+	}
+	
+	.title i {
+		color: #3D9970;
+	}
+	
+	.links {
+		float: right;
+	}
 	
 	.left {
 		padding: 20px 30px;
