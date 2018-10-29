@@ -25,17 +25,39 @@
 
  
 	.header {
-			padding: 50px;
+			padding: 35px;
 			font-family: 'Alfa Slab One';
 			border-bottom: 5px solid black;
-			background: #075997;
+			background: rgb(130,177,227);
+			background: linear-gradient(0deg, rgba(130,177,227,1) 0%, rgba(175,199,215,1) 51%, rgba(40,126,251,1) 100%);
 			min-height: 100px;
 			margin-bottom: 100px;
 	}
 	
+	.links a:visited {
+		color: black;
+		background-color: white;
+		transition: all .4s ease 0s;
+	}
+	
+	.links a:link {
+		padding: 14px;
+		background-color: white;
+		border-radius: 40px;
+		 transition: all .4s ease 0s;
+	}
+	
+
+	.links a:hover {
+		text-decoration: none;
+		background-color: #d7dadb;
+	}
+
+		
+	
 	.title {
 		display: inline-block;
-		font-size: 6vh;
+		font-size: 5vh;
 	}
 	
 	.title i {
@@ -66,6 +88,24 @@
 		margin-top: 50px;
 		width: 75%;
 	}
+	
+	
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: .5em;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+font-size: .4em;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+ font-size: .4em;
+}
+input:-moz-placeholder { /* Firefox 18- */
+font-size: .4em;
+}
+	
+	
+	
+	
 	
 	@media screen and (max-width: 600px) {
 	
@@ -106,5 +146,5 @@
 	.header {
 		display: none;
 	}
-	
+
 }
