@@ -1,6 +1,28 @@
+.card h3, .card h2 {
+	font-size: 1.3em;
+}
+
+.fa-folder-open {
+	color: #f1d592
+}
+
+.fa-cog {
+	color: grey;
+}
+
+.fa-tachometer-alt {
+	color: lightblue;
+}
+
+
+
+#Networth, #Leader, #TotalMoney, td:nth-child(3), td:nth-child(4), .fa-money-bill-alt{
+	color: green;
+}
+
 .card {
 	margin-bottom: 20px;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	min-height: 260px;
 }
 
