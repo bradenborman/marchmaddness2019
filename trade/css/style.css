@@ -18,6 +18,14 @@
 	 color: green;
 	 }
          
+		
+.header {
+	min-height: 130px;
+	padding: 30px;
+	width: 100%;
+	font-family: 'Alfa Slab One';
+}		
+		 
 		 
 		 @media screen and (max-width: 600px) {
 			 .slider {

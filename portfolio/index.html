@@ -22,7 +22,7 @@
 		  <div class="row">
 				<div class="col-lg-6">
 						<div class="card">
-							<div class="card-header"><h2><i class="fas fa-folder-open"></i> My Snapshot</h2></div>
+							<div class="card-header"><h2><i class="fas fa-folder-open"></i> Snapshot</h2></div>
 							<div class="card-body">
 								<div class="row">
 									<div class="col-lg-12">
@@ -31,7 +31,7 @@
 								</div>
 								<div class="row">
 									<div class="col-lg-12">
-										<p><b><h5>Standings in leaderboard: </b><span id="Standings"></span><h5></p>
+										<p><b><h5>My Leaderboard Position: </b><span id="Standings"></span><h5></p>
 									</div>
 								</div>	
 							</div> 
@@ -142,13 +142,11 @@
 </div>
 <script>
 $(document).ready(function(){
-
 	var networth = "345345"
 	var standings = "6"
 	var leader = "234500"
 	var totalMoney = "1345200"
 	var currentRound = "32"
-
 	$("#Networth").html("$" + ReplaceNumberWithCommas(networth));
 	$("#Standings").html(standings);
 	$("#Leader").html("$" + ReplaceNumberWithCommas(leader));
@@ -157,19 +155,14 @@ $(document).ready(function(){
 	
    
 });
-
 var d = new Date();
 var n = d.toLocaleTimeString();
 document.getElementById("dateTime").innerHTML = d.toDateString() + " " + n
-
-
 //PHP send with url vars
 function goToTradeCentral(teamName) {
 	alert(teamName)
 	window.location.href = "../trade/index.html";
 }
-
-
 function ReplaceNumberWithCommas(yourNumber) {
     //Seperates the components of the number
     var n= yourNumber.toString().split(".");
