@@ -39,12 +39,21 @@ body {
 	margin-top: 50px; 
 }
 
+#Search {
+			margin-top: 10px;
+		}
+
 
 @media (max-width: 575.98px) { 
 		#Info {
+			padding-top: 10px;
 			font-size: .8em;
 			text-align: center;
 			float:clear;
+		}
+		
+		#Search {
+			margin-top: 20px;
 		}
 
 		.app {

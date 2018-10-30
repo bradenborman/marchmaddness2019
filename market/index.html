@@ -14,6 +14,9 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css/style.css">
 	  <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+
    </head>
    <body onload="drawChart()">
 
@@ -40,8 +43,22 @@
 							</div>
 						</div>
 					</div>
+			
+<div id="Search">
+		<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<i class="fas fa-search" onclick="searchTeam()"></i>
+					<input type="text" class="form-control" placeholder="Quick Find"  id="searchINPUT">			
+				</div>
+		</div>
+</div>					
+		
 </div>
 </div>
+		
+				
+					<!--TO DO ALSO  POPULATE A LIST FOR SEARCHING -->
+
 
 <div class="container app">				
 <div class="row">
@@ -57,7 +74,7 @@
                   <p style="Font-size: 2.6em;">$3,556</p>
                   <p class="text-center" style="Font-size: 1.7em;"><a class="btn btn-outline-success btn-lg" href="../trade/index.html" class="card-link">Trade</a></p>
                   <!--  Php_Scripts/displayGames.php?week=2? -->
-                  <p class="hidden values d-none">2200 5433 3556 4423 2233 2442</p>
+                  <p class="hidden values d-none">2200 5433 3556 4423 2233 2442 3453</p>
                </div>
                <div class="card-footer">
                   <div class="text-muted">Seeding: 5 <span style="float: right;">Shares Outstanding: 23</span></div>
@@ -72,7 +89,7 @@
                   <p style="Font-size: 2.6em;">$5,000</p>
                   <p style="Font-size: 1.7em;"><a href="../trade/index.html" class="card-link">Trade</a></p>
                   <!--  Php_Scripts/displayGames.php?week=2? -->
-                  <p class="hidden values d-none">2200 5433 3556 4423 2233 2442</p>
+                  <p class="hidden values d-none">2200 5433 3556 4423</p>
                </div>
                <div class="card-footer">
                   <div class="text-muted">Seeding: 5 <span style="float: right;">Shares Outstanding: 23</span></div>
@@ -176,7 +193,8 @@
          ['16',  parseInt(valueArray[2])],
          ['8',  parseInt(valueArray[3])],
          ['4',  parseInt(valueArray[4])],
-         ['2',  parseInt(valueArray[5])]
+         ['2',  parseInt(valueArray[5])],
+		 ['1',  parseInt(valueArray[6])]
          ]);
          
          var options = {
@@ -187,13 +205,25 @@
          chart.draw(data, options);
          });		
          }
-		 
-		 
-		 
-
-		 	 
-		 
-		 
+		  
       </script>
+	  
+	 
+	  <script>
+		function searchTeam() {
+			var team = $("#searchINPUT").val()
+			var id = "#"  + team
+			var distance = $(id).offset().top
+				
+			 $(window).scrollTop(distance - 300);
+					 
+		 }
+		 
+		
+	  </script>
+	  
+	  
+	  
+	  
    </body>
 </html>
