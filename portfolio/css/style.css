@@ -20,10 +20,13 @@
 
 
 @media (max-width: 575.98px) { 
-.card {
-	margin-bottom: 15px;
-	font-size: 1em;
-	min-height: 50px;
-}
+	.card {
+		margin-bottom: 15px;
+		font-size: 1em;
+		min-height: 50px;
+	}
+	.card-body h3, .card-body h5 {
+		font-size: 1.2em;
+	}
 
 }

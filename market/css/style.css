@@ -1,3 +1,21 @@
+body {
+	    background-color: rgba(0,0,0,.07);
+  }
+
+  #Info {
+	   position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		padding: 20px;
+		z-index: 99;
+		background-color: #eeeeee;
+  }
+  
+ #links a {
+	  float: right;
+	  display: inline;
+  }
+  
 .card-header {
 	font-size: 1.6em;
  }
@@ -10,10 +28,6 @@
  }
 
 
-#sideInfo {
-	margin-bottom: 20px;
-}
- 
 .header {
 	min-height: 130px;
 	padding: 30px;
@@ -22,12 +36,18 @@
 }
 
 .app {
-	margin-top: 30px;
+	margin-top: 50px; 
 }
 
 
 @media (max-width: 575.98px) { 
-		#sideInfo {
-		text-align: center;
+		#Info {
+			font-size: .8em;
+			text-align: center;
+			float:clear;
 		}
+
+		.app {
+			margin-top: 10px; 
+		}		
  }
