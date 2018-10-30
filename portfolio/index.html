@@ -82,7 +82,7 @@
 										  <td>14</td>
 										  <td>$8,200</td>
 										  <td>$15,500</td>
-										  <td><button type="button" class="btn btn-primary">Trade</button></td>
+										  <td><button type="button" class="btn btn-primary" onclick='goToTradeCentral("Missouri")'>Trade</button></td>
 										</tr>
 										<tr>
 										  <td>Duke</td>
@@ -125,7 +125,7 @@
 							  <a class="nav-link" href="#">Extended Rules</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link" href="#">Log-out</a> <!-- To PHP SCRIPT THAT LOGS OUT THEN HEADS TO HOME PAGE -->
+							  <a class="nav-link" href="../index.html">Log-out</a> <!-- To PHP SCRIPT THAT LOGS OUT THEN HEADS TO HOME PAGE -->
 							</li>
 						  </ul>
 						</div> 
@@ -151,12 +151,16 @@ $(document).ready(function(){
    
 });
 
-
-
 var d = new Date();
 var n = d.toLocaleTimeString();
 document.getElementById("dateTime").innerHTML = d.toDateString() + " " + n
 
+
+//PHP send with url vars
+function goToTradeCentral(teamName) {
+	alert(teamName)
+	window.location.href = "../trade/index.html";
+}
 
 
 function ReplaceNumberWithCommas(yourNumber) {
