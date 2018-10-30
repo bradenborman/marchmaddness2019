@@ -28,8 +28,6 @@
 			padding: 35px;
 			font-family: 'Alfa Slab One';
 			border-bottom: 5px solid black;
-			background: rgb(130,177,227);
-			background: linear-gradient(0deg, rgba(130,177,227,1) 0%, rgba(175,199,215,1) 51%, rgba(40,126,251,1) 100%);
 			min-height: 100px;
 			margin-bottom: 100px;
 	}

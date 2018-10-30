@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
+  </head>
+<body>
+
+<div class="header bg-info mb-3">
+<h1>Courtside Cash</h1>
+</div>
+
+<div class="container app">
+		  <div class="row">
+				<div class="col-lg-6">
+						<div class="card">
+							<div class="card-header"><h2><i class="fas fa-folder-open"></i> My Snapshot</h2></div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col-lg-12">
+										<p><h3>My Networth: <span id="Networth"></span></h3></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-12">
+										<p><h5>Standings in leaderboard: <span id="Standings"></span><h5></p>
+									</div>
+								</div>	
+							</div> 
+							
+						  </div>
+				</div>
+				<div class="col-lg-6">
+				  <div class="card text-justify">
+						<div class="card-header"><h2><i class="fas fa-tachometer-alt"></i> Game flow</h2></div>
+						<div class="card-body ">
+							<div class="row">
+								<div class="col-lg-12">
+									<p><b>Leader's Value:</b> <span id="Leader"></span></p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12">
+									<p><b>Total Money in play:</b> <span id="TotalMoney"></span></p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-6">
+									<p><b>Current Round:</b> <span id="CurrentRound"></span></p>
+								</div>
+							</div>	
+						</div> 						
+					  </div>
+				</div>
+		  </div>
+		  <div class="row"><!-- FOR EACH TEAM -- PRINT JAVASCRIPT FUNCTION THAT TAKES IN TEAM NAME OR ID CREATE FUNCTION THAT HEADS TO TRADE PAGE WITH TEAM NAME SET-->
+				<div class="col-lg-8">
+						<div class="card">
+						<div class="card-header"><h2><i class="fas fa-money-bill-alt"></i> My Investments</h2></div>
+								<div class="table-responsive-sm">
+								<table class="table table-hover table-striped text-center">
+									  <thead>
+										<tr>
+										  <th scope="col">Institution</th>
+										  <th scope="col">Owned Amount</th>
+										  <th scope="col">Current Price</th>
+										  <th scope="col">Market Value</th>
+										  <th scope="col"></th>
+										</tr>
+									  </thead>
+									  <tbody>
+										<tr>
+										  <td>Missouri</td>
+										  <td>14</td>
+										  <td>$8,200</td>
+										  <td>$15,500</td>
+										  <td><button type="button" class="btn btn-primary">Trade</button></td>
+										</tr>
+										<tr>
+										  <td>Duke</td>
+										  <td>20</td>
+										  <td>$2,200</td>
+										  <td>$35,000</td>
+										  <td><button type="button" class="btn btn-primary">Trade</button></td>
+										</tr>
+										<tr>
+										  <td>Kansas</td>
+										  <td>5</td>
+										  <td>$5,700</td>
+										  <td>$7,400</td>
+										  <td><button type="button" class="btn btn-primary">Trade</button></td>
+										</tr>
+									  </tbody>
+									</table>
+								<div class="card-footer"><i><b>As of: <span id="dateTime"></span></b></i></div>
+								</div>
+						</div>
+				</div>
+				<div class="col-lg-4">
+				  <div class="card">
+						<div class="card-header"><h2><i class="fas fa-cog"></i> Options</h2></div>
+						<div class="card-body">
+							<ul class="nav flex-column">
+							<li class="nav-item">
+							  <a class="nav-link" href="../market/index.html">View Market</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#">View Leaderboard</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Transaction History</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#">User Information</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Extended Rules</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" href="#">Log-out</a> <!-- To PHP SCRIPT THAT LOGS OUT THEN HEADS TO HOME PAGE -->
+							</li>
+						  </ul>
+						</div> 
+					  </div>
+				</div>
+		  </div>  
+</div>
+<script>
+$(document).ready(function(){
+
+	var networth = "345345"
+	var standings = "6"
+	var leader = "234500"
+	var totalMoney = "1345200"
+	var currentRound = "32"
+
+	$("#Networth").html("$" + ReplaceNumberWithCommas(networth));
+	$("#Standings").html(standings);
+	$("#Leader").html("$" + ReplaceNumberWithCommas(leader));
+	$("#TotalMoney").html("$" + ReplaceNumberWithCommas(totalMoney));
+	$("#CurrentRound").html(currentRound);
+	
+   
+});
+
+
+
+var d = new Date();
+var n = d.toLocaleTimeString();
+document.getElementById("dateTime").innerHTML = d.toDateString() + " " + n
+
+
+
+function ReplaceNumberWithCommas(yourNumber) {
+    //Seperates the components of the number
+    var n= yourNumber.toString().split(".");
+    //Comma-fies the first part
+    n[0] = n[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    //Combines the two sections
+    return n.join(".");
+}
+</script>
+
+</body>
+</html>

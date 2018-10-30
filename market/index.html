@@ -13,34 +13,27 @@
       <!-- Latest compiled JavaScript -->
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
       <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
    </head>
    <body onload="drawChart()">
-      <div class="navWrapper">
-         <div class="container">
-            <div class="infoWrapper">
-               <h5><span id="user">Braden Borman</span></h5>
-               <h4 style="display: inline;">Capital available: <span id="cash">$100,000</span></h4>
-            </div>
-            <div class="links">
-               <a href="#">My Portfolio</a>
-               <a href="../index.html">Sign Out</a>
-            </div>
-         </div>
-      </div>
-      <div class="container">
-         
 
-
+<div class="header bg-info mb-3">
+<h1>Courtside Cash</h1>
+</div>
+   
+<div class="container app">
 <div class="row">
 		
-		<div class="col-lg-2 col-md-3">
+		<div class="col-lg-3 col-md-3">
 
-			<div id="listOfTeams">
-				More Info here
+			<div id="sideInfo">
+				<h4><span id="user">Braden Borman</span></h4><hr />
+               <h4 style="display: inline;">Capital available: <span id="cash">$100,000</span></h4><hr />
+			   <a class="nav-link" href="../portfolio/index.html">Portfolio</a>
 			</div>
 			
 		</div>
- <div class="col-lg-10 col-md-9">
+ <div class="col-lg-9 col-md-9">
 		 
 		 <div class="card-deck">
             <!-- TODO start loop with php and then print the following in right spot: TeamName | TeamName | CurrentPrice | TeamName | Values -->
@@ -185,11 +178,7 @@
 		 
 		 
 		 
-		 
-		 $(document).ready(function(){
-				//$("#listOfTeams").html("Duke <br /> Texas");
-		});
-		 
+
 		 	 
 		 
 		 

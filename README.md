@@ -4,6 +4,16 @@
 	//TODO 
 			
 			Pull random quotes to display on log in page
+			
+		On portfolio page: 
+			
+			Transaction log
+			snap shot of info
+				balence
+				leader value 
+				current round 
+				last transaction
+				% of diff since started 
 
 
 SQL's:
