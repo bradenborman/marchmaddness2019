@@ -14,7 +14,12 @@
 				current round 
 				last transaction
 				% of diff since started 
+		
+		
+		IPO maybe
 
+		LATE to the party fee: If there are more than 50 shares out standing => Fee of the cost of one share is tacked on 
+		
 
 SQL's:
 

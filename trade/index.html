@@ -8,6 +8,9 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+
 	  <link rel="stylesheet" type="text/css" href="css/style.css">
 	  	<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
    </head>
@@ -35,24 +38,27 @@
             <div class="card-header">
                <h1>Missouri</h1>
                <h3 id="costPerShare">$25,000</h3>
-            </div>
+				
+				<i class="fas fa-shopping-cart"></i> <span id="totalSpent">$0</span>
+			
+			</div>
             <!-- TEAM NAME HERE -->
             <div class="card-body">
                <h6 class="card-title">Slide to the right to increase amount</h6>
                <br />
                <div class="row">
                   <div class="col-md-6 text-center">
-                     <form action="php/buy.php" method="post" onsubmit="return validateForm()">
+                     <form action="php/buy.php" method="post" onsubmit="return validateBuyForm()">
                         <input onchange="updateBuyBTN(this.value)" class="slider" type="range" min="0" max="100" value="0" class="slider" id="buySlider" name="value">
                         <br />
-                        <button type="submit" class="buy btn btn-success">Buy</button>
+                        <button id="buyBTN" type="submit" class="buy btn btn-success">Buy</button>
                      </form>
                   </div>
                   <div class="col-md-6 text-center">
-                     <form action="php/sell.php" method="post" onsubmit="return validateForm()">		
+                     <form action="php/sell.php" method="post" onsubmit="return validateSellForm()">		
                         <input onchange="updateSellBTN(this.value)" class="slider" type="range" min="0" max="0" value="0" class="slider" id="sellSlider" name="value">
                         <br />
-                        <button type="submit" class="sell btn btn-success">Sell</button>
+                        <button id="sellBTN" type="submit" class="sell btn btn-success">Sell</button>
                      </form>
                   </div>
                </div>
@@ -60,14 +66,33 @@
          </div>
       </div>
       <script>
+	  
+		//HARD CODED FOR TESTING
+		var lateToPartyFee = true;
+	  
          function updateBuyBTN(value) {
+			updateSpent(value)
          	$(".buy").html("Buy: " + value);
          }
          
          function updateSellBTN(value) {
-         	$(".sell").html("Sell: " + value);
+         	updateSpent(value)
+			$(".sell").html("Sell: " + value);
          }
          
+		 function updateSpent(value) {
+		  var y = $("#costPerShare").text()
+		  var cost = y.replace(/\D+/g, '');  
+				
+			if(lateToPartyFee)
+				var spent = (value * cost) + cost 
+			else
+				var spent = value * cost 
+				
+				$('#totalSpent').html("$" + ReplaceNumberWithCommas(spent))
+		 }
+		 
+		 
          function determineSliderValues() {	
          	var x = $("#cash").text()
          	var y = $("#costPerShare").text()
@@ -81,11 +106,29 @@
                  });	
          }
          
-         function validateForm() {
+		 
+         function validateBuyForm() {
          	//ajax for cash AND price of team and return false if not a match
+			$("#buyBTN").prop("disabled",true);
+         	return false
+         }
+		 
+         function validateSellForm() {
+         	//ajax for cash AND price of team and return false if not a match
+			$("#sellBTN").prop("disabled",true);
          	return false
          }
          	
+			
+function ReplaceNumberWithCommas(yourNumber) {
+    //Seperates the components of the number
+    var n= yourNumber.toString().split(".");
+    //Comma-fies the first part
+    n[0] = n[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    //Combines the two sections
+    return n.join(".");
+}	
+			
       </script>
    </body>
 </html>

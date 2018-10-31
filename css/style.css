@@ -67,21 +67,23 @@
 	}
 	
 	
-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  font-size: .5em;
-}
-input::-moz-placeholder { /* Firefox 19+ */
-font-size: .4em;
-}
-input:-ms-input-placeholder { /* IE 10+ */
- font-size: .4em;
-}
-input:-moz-placeholder { /* Firefox 18- */
-font-size: .4em;
-}
+	.fa-cog {
+		color: grey;
+	}
 	
+	.fa-dollar-sign {
+		color: green;
+	}
 	
+	.fa-chart-line {
+		color: #4aa3e8;
+	}
 	
+	.fa-user-plus, .fa-sign-in-alt {
+		color: grey;
+	}
+	
+
 	
 	
 	@media screen and (max-width: 600px) {
