@@ -17,6 +17,7 @@
    <body onload="determineSliderValues()">
      
 
+	 <!-- IF FEE APPLIES PRINT CHECKED INTO HIDDEN INPUT ON BUY SECTION -->
 
 <div class="header bg-info mb-3">
 <h1>Courtside Cash</h1>
@@ -50,13 +51,14 @@
                   <div class="col-md-6 text-center">
                      <form action="php/buy.php" method="post" onsubmit="return validateBuyForm()">
                         <input onchange="updateBuyBTN(this.value)" class="slider" type="range" min="0" max="100" value="0" class="slider" id="buySlider" name="value">
-                        <br />
+                        <input style="display: none;" type="checkbox" name="isFee" id="isFee" checked value="true" onChange="determineSliderValues()">
+						<br />
                         <button id="buyBTN" type="submit" class="buy btn btn-success">Buy</button>
                      </form>
                   </div>
                   <div class="col-md-6 text-center">
                      <form action="php/sell.php" method="post" onsubmit="return validateSellForm()">		
-                        <input onchange="updateSellBTN(this.value)" class="slider" type="range" min="0" max="0" value="0" class="slider" id="sellSlider" name="value">
+                        <input onchange="updateSellBTN(this.value)" class="slider" type="range" min="0" max="0" value="0" class="slider" id="sellSlider" name="value">						
                         <br />
                         <button id="sellBTN" type="submit" class="sell btn btn-success">Sell</button>
                      </form>
@@ -68,7 +70,7 @@
       <script>
 	  
 		//HARD CODED FOR TESTING
-		var lateToPartyFee = true;
+		var lateToPartyFee = $("#isFee").attr("checked") ? true : false;
 	  
          function updateBuyBTN(value) {
 			updateSpent(value)
@@ -84,12 +86,15 @@
 		  var y = $("#costPerShare").text()
 		  var cost = y.replace(/\D+/g, '');  
 				
-			if(lateToPartyFee)
-				var spent = (value * cost) + cost 
-			else
+			if(lateToPartyFee && value > 0) {
+				var spent = parseInt((value * cost)) + parseInt(cost)
+				$('#totalSpent').html("$" + ReplaceNumberWithCommas(spent) + "<br /> - \"Late to the Party\" fee applied. (<span style='color: red;'>$" + ReplaceNumberWithCommas(cost) + "</span>)")
+			}
+			else {
 				var spent = value * cost 
-				
 				$('#totalSpent').html("$" + ReplaceNumberWithCommas(spent))
+			}
+			
 		 }
 		 
 		 
@@ -100,6 +105,9 @@
          	var cost = y.replace(/\D+/g, '');
          	var maxBuy = Math.floor(parseInt(cash) / parseInt(cost))
          
+			if(lateToPartyFee)
+				maxBuy -= 1
+		 
          	$('#buySlider').prop({
                      'min': 0,
                      'max': maxBuy
