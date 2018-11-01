@@ -44,7 +44,10 @@ body {
 			margin-top: 10px;
 		}
 
-
+.fa-search:hover {
+	cursor: pointer;
+}
+		
 @media (max-width: 575.98px) { 
 		#Info {
 			padding-top: 10px;
