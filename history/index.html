@@ -20,20 +20,29 @@
 <body>
 
 	<div class="header bg-info mb-3">
-			<h1>title here</h1>
+			<h1>Courtside Cash</h1>
+	<div id="links">							
+		<a class="nav-link" href="../portfolio/index.html">Portfolio</a>
+		<a class="nav-link" href="../index.html">Log Out</a><!-- PHP page to log out -->
+	</div>
+				
 	</div>
    
+   	
+	
 
-<div class="container">		
+
+<div class="container">	
+		
 <div id="Search">
 <div class="row">	
 				<div class="col-md-12">
 					  <div class="custom-control custom-radio custom-control-inline">
-						<input checked type="radio" class="custom-control-input" id="isOnlyMeRad" name="isOnlyMe" value="True">
+						<input type="radio" class="custom-control-input" id="isOnlyMeRad" name="isOnlyMe" onchange="showOnlyme()" value="True">
 						<label class="custom-control-label" for="isOnlyMeRad">My Transactions</label>
 					  </div>
 					  <div class="custom-control custom-radio custom-control-inline">
-						<input onchange="" type="radio" class="custom-control-input" id="isOnlyMeRad2" name="isOnlyMe" value="False">
+						<input checked onchange="showEveryOne()" type="radio" class="custom-control-input" id="isOnlyMeRad2" name="isOnlyMe" value="False">
 						<label class="custom-control-label" for="isOnlyMeRad2">All Transactions</label>
 					  </div> 
 				</div>
@@ -174,7 +183,27 @@ if(filters.length <= 1) {
 
 function showOnlyme() {
 		
-	var name = "Brent Thoenen" // PHP print var here
+	var name = "Cory Loeffelman" // PHP print var here
+	 
+		$('tr').each(function(){
+			var tr = $(this);
+			if (tr.find('td:eq(5)').text() != name) 
+				tr.hide()
+});
+	 
+}
+
+
+//TODO takes away headers on switch
+function showEveryOne() {
+		
+	var name = "Cory Loeffelman" // PHP print var here
+	 
+		$('tr').each(function(){
+			var tr = $(this);
+				if (tr.find('td:eq(5)').text() != name || tr.find('td:eq(5)').text() == name) 
+				tr.show()
+});
 	 
 }
 
