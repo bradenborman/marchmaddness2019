@@ -27,11 +27,21 @@ table {
 	margin-top: 10px;
 }
 
+.howTo {
+	padding-right: 40px;
+	padding-left: 40px;
+}
 
 .dropdown-menu span {
 	margin-left: 15px;
+	margin-right: 15px;
 }
-		
+
+.dropdown-menu span:hover, .fa-times:hover {
+	cursor: pointer;
+
+}	
+	
 @media (max-width: 575.98px) { 
 
 		table {

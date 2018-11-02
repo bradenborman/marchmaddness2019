@@ -19,14 +19,15 @@
    
 <body>
 
-	<div class="header bg-info mb-3">
+<div class="header bg-info mb-3">
 			<h1>Courtside Cash</h1>
-	<div id="links">							
-		<a class="nav-link" href="../portfolio/index.html">Portfolio</a>
-		<a class="nav-link" href="../index.html">Log Out</a><!-- PHP page to log out -->
-	</div>
-				
-	</div>
+	<div class="container">	
+		<div id="links">							
+			<a class="nav-link" href="../index.html">Log Out</a><!-- PHP page to log out -->
+			<a class="nav-link" href="../portfolio/index.html">Portfolio</a>
+		</div>
+	</div>		
+</div>
    
    	
 	
@@ -35,8 +36,8 @@
 <div class="container">	
 		
 <div id="Search">
-<div class="row">	
-				<div class="col-md-12">
+	<div class="row">	
+				<div class="col-lg-12">
 					  <div class="custom-control custom-radio custom-control-inline">
 						<input type="radio" class="custom-control-input" id="isOnlyMeRad" name="isOnlyMe" onchange="showOnlyme()" value="True">
 						<label class="custom-control-label" for="isOnlyMeRad">My Transactions</label>
@@ -46,7 +47,9 @@
 						<label class="custom-control-label" for="isOnlyMeRad2">All Transactions</label>
 					  </div> 
 				</div>
-				<div class="col-md-6">
+	</div>
+	<div class="row">
+				<div class="col-lg-5">
 							<div class="input-group mt-3 mb-3">
 							  <div class="input-group-prepend">
 								<button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
@@ -55,74 +58,101 @@
 								<div class="dropdown-menu">
 								  <span>Missouri</span>
 								  <span>Texas</span>
+								  <span>UCLA</span>
+								  <span>Tennessee</span>
 								</div>
 							  </div>
 							  <input type="text" class="form-control" placeholder='Seach' id="teamSerachInput" onkeyup="myFunction()">
 							  <div class="input-group-append">
 								  <span class="input-group-text"><i class="fas fa-search"></i></span>
+								  <span class="input-group-text"><i class="fas fa-times"></i></span>
 								</div>
 							</div>
 				</div>
-		</div>
+	</div>
+</div>
 </div>	
 </div>
 	
 <div class="container app">				
-	<div class="row">
-		<div class="col-lg-8">
-		<div class="table-responsive">		
+<div class="row">
+<div class="col-lg-8">
+<div class="table-responsive">		
 <table id="myTable" class="table">
-  <tr class="header">
-    <th>Team</th>
-	<th>Action</th>
-    <th>Amount</th>
-	<th>Price</th>
-	<th>Round</th>
-	<th>Identity</th>
-  </tr>
-  <tr>
-    <td>Missouri</td>
-	<td><span class="badge badge-success">Sell</span></td>
-    <td>15</td>
-	<td>$25,200</td>
-	<td>32</td>
-	<td>Brent Thoenen</td>
-  </tr>
-  <tr>
-    <td>UCLA</td>
-	<td><span class="badge badge-info">Buy</span></td>
-    <td>8</td>
-	<td>$35,200</td>
-	<td>64</td>
-	<td>Cory Loeffelman</td>
-  </tr>
-  <tr>
-    <td>Texas</td>
-	<td><span class="badge badge-info">Buy</span></td>
-    <td>5</td>
-	<td>$11,200</td>
-	<td>64</td>
-	<td>Cory Loeffelman</td>
-  </tr>
-    <tr>
-    <td>Duke</td>
-	<td><span class="badge badge-info">Buy</span></td>
-    <td>20</td>
-	<td>$40,400</td>
-	<td>64</td>
-	<td>Brent Thoenen</td>
-  </tr>
+<tr class="header">
+<th>Team</th>
+<th>Action</th>
+<th>Amount</th>
+<th>Price</th>
+<th>Round</th>
+<th>Identity</th>
+</tr>
+<tr>
+<td>Missouri</td>
+<td><span class="badge badge-success">Sell</span></td>
+<td>15</td>
+<td>$25,200</td>
+<td>32</td>
+<td>Brent Thoenen</td>
+</tr>
+<tr>
+<td>UCLA</td>
+<td><span class="badge badge-info">Buy</span></td>
+<td>8</td>
+<td>$35,200</td>
+<td>64</td>
+<td>Cory Loeffelman</td>
+</tr>
+<tr>
+<td>Texas</td>
+<td><span class="badge badge-info">Buy</span></td>
+<td>5</td>
+<td>$11,200</td>
+<td>64</td>
+<td>Cory Loeffelman</td>
+</tr>
+<tr>
+<td>Duke</td>
+<td><span class="badge badge-info">Buy</span></td>
+<td>20</td>
+<td>$40,400</td>
+<td>64</td>
+<td>Brent Thoenen</td>
+</tr>
+<tr>
+<td>Tennessee</td>
+<td><span class="badge badge-info">Buy</span></td>
+<td>6</td>
+<td>$8,200</td>
+<td>32</td>
+<td>Cory Loeffelman</td>
+</tr>
+<tr>
+<td>Purdue</td>
+<td><span class="badge badge-success">Sell</span></td>
+<td>15</td>
+<td>$25,200</td>
+<td>32</td>
+<td>Cory Loeffelman</td>
+</tr>
 </table>
 </div>
+</div>
+		
+		
+		<div class="col-lg-4 howTo">
+			<div class="card">
+			  <h5 class="card-header"><i class="fas fa-book-reader"></i> How to search</h5>
+			  <div class="card-body text-center">
+				<p class="card-text">To view only transaction made by you. Click the radio button next to<br><i>'My Transactions'</i><br /><br /> Remove the filter by selecting<br /> <i>'All Transactions'</i></p>
+				
+				<p>If you are on a mobile device, click the headers 'Amount' and 'Round' to remove them from the view.</p>
+				
+				<p>The search bar will help with miscellaneous searches. <br /><b> "Jacob Buy" </b><br /> Will return all the times someone named Jacob has purchased</p>
+				<a href="#" class="btn btn-primary">Go somewhere</a>
+			  </div>
+			</div>
 		</div>
-		<div class="col-lg-4 text-center">
-			<h3>Searching help</h3>
-			<hr />
-			- Touch away <b>"Amount"</b> & <b>"Round"</b> to save space on a moble device<br /><br />
-			- Search can takes two arguments. Example: "Buy Jacob"<br /><br />
-			
-			Will search all the times a person named Jacob bought
-			
 			
 		</div>
 	</div>
@@ -185,7 +215,7 @@ function showOnlyme() {
 		
 	var name = "Cory Loeffelman" // PHP print var here
 	 
-		$('tr').each(function(){
+		$('tr:not(:first)').each(function(){
 			var tr = $(this);
 			if (tr.find('td:eq(5)').text() != name) 
 				tr.hide()
@@ -228,9 +258,10 @@ $( "th" ).click(function() {
 
 });
 
-
-
-
+$( ".fa-times" ).click(function() {
+	$("#teamSerachInput:text").val("");
+	myFunction()
+});
 
 
 /*
