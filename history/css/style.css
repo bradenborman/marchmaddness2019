@@ -1,0 +1,45 @@
+body {
+	 background-color: rgba(0,0,0,.07)
+}
+
+table {
+			font-size: 1.3em;
+		}
+
+.header {
+	min-height: 130px;
+	padding: 30px;
+	width: 100%;
+	font-family: 'Alfa Slab One';
+}
+
+.app {
+	margin-top: 50px; 
+}
+
+#Search {
+	margin-top: 10px;
+}
+
+
+.dropdown-menu span {
+	margin-left: 15px;
+}
+		
+@media (max-width: 575.98px) { 
+
+		table {
+			font-size: .9em;
+		}
+		
+	
+		#Search {
+			margin-top: 20px;
+		}
+
+		.app {
+			margin-top: 10px; 
+		}	
+
+		
+ }
