@@ -15,7 +15,7 @@
       <link rel="stylesheet" type="text/css" href="css/style.css">
 	  <link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
-
+		<script src="scripts/general.js"></script>
 
    </head>
    <body onload="drawChart()">
@@ -37,7 +37,7 @@
 						   <h4 style="display: inline;">Capital available: <span id="cash">$100,000</span></h4>
 						</div>
 					<div class="col-sm-6">
-							<div id="links">
+							<div id="links">							
 									<a class="nav-link" href="../index.html">Log Out</a><!-- PHP page to log out -->
 									<a class="nav-link" href="../portfolio/index.html">Portfolio</a>
 							</div>
@@ -57,6 +57,7 @@
 							
 				</div>
 		</div>
+		<input type="checkbox" id="hideCheckbox" value="Bike"> Hide Charts?
 </div>					
 		
 </div>
@@ -77,10 +78,11 @@
                <div class="card-img-top" id="Missouri"></div>
                <div class="card-body">
                   <!-- Links -->
-                  <p style="Font-size: 2.6em;">$3,556</p>
-                  <p class="text-center" style="Font-size: 1.7em;"><a class="btn btn-outline-success btn-lg" href="../trade/index.html" class="card-link">Trade</a></p>
-                  <!--  Php_Scripts/displayGames.php?week=2? -->
-                  <p class="hidden values d-none">2200 1700 1700 1700 1700 1700 1700</p>
+                  <p style="Font-size: 2.6em; display: inline;">$5,000</p>
+                  <p style="Font-size: 1.7em; display: inline; float: right; margin-right: 10px; margin-top: 10px;">
+				  <a href="../trade/index.html" class="card-link">Trade</a></p>
+                  <!--  EXAMPLE Php_Scripts/displayGames.php?week=2? -->
+                  <p class="hidden values d-none">2200 5433 3556 4423</p>
                </div>
                <div class="card-footer">
                   <div class="text-muted">Seeding: 5 <span style="float: right;">Shares Outstanding: 23</span></div>
@@ -92,9 +94,10 @@
                <div class="card-img-top" id="Texas"></div>
                <div class="card-body">
                   <!-- Links -->
-                  <p style="Font-size: 2.6em;">$5,000</p>
-                  <p style="Font-size: 1.7em;"><a href="../trade/index.html" class="card-link">Trade</a></p>
-                  <!--  Php_Scripts/displayGames.php?week=2? -->
+                  <p style="Font-size: 2.6em; display: inline;">$5,000</p>
+                  <p style="Font-size: 1.7em; display: inline; float: right; margin-right: 10px; margin-top: 10px;">
+				  <a href="../trade/index.html" class="card-link">Trade</a></p>
+                  <!--  EXAMPLE Php_Scripts/displayGames.php?week=2? -->
                   <p class="hidden values d-none">2200 5433 3556 4423</p>
                </div>
                <div class="card-footer">
@@ -110,25 +113,27 @@
                <div class="card-img-top" id="UCLA"></div>
                <div class="card-body">
                   <!-- Links -->
-                  <p style="Font-size: 2.6em;">$3,400</p>
-                  <p style="Font-size: 1.7em;"><a href="../trade/index.html" class="card-link">Trade</a></p>
-                  <!--  Php_Scripts/displayGames.php?week=2? -->
-                  <p class="hidden values d-none">2200 5433 3556 4423 2233 2442</p>
+                  <p style="Font-size: 2.6em; display: inline;">$5,000</p>
+                  <p style="Font-size: 1.7em; display: inline; float: right; margin-right: 10px; margin-top: 10px;">
+				  <a href="../trade/index.html" class="card-link">Trade</a></p>
+                  <!--  EXAMPLE Php_Scripts/displayGames.php?week=2? -->
+                  <p class="hidden values d-none">2200 5433 3556 4423</p>
                </div>
                <div class="card-footer">
                   <div class="text-muted">Seeding: 5 <span style="float: right;">Shares Outstanding: 23</span></div>
                   <!--PRINT OUT STATUS AND SHARES OUTSTANDING -->
                </div>
             </div>
-            <div class="card">
+				<div class="card">
                <h1 class="card-header">Duke</h1>
                <div class="card-img-top" id="Duke"></div>
                <div class="card-body">
                   <!-- Links -->
-                  <p style="Font-size: 2.6em;">$6,500</p>
-                  <p style="Font-size: 1.7em;"><a href="../trade/index.html" class="card-link">Trade</a></p>
-                  <!--  Php_Scripts/displayGames.php?week=2? -->
-                  <p class="hidden values d-none">2200 5433 3556 4423 2233 2442</p>
+                  <p style="Font-size: 2.6em; display: inline;">$5,000</p>
+                  <p style="Font-size: 1.7em; display: inline; float: right; margin-right: 10px; margin-top: 10px;">
+				  <a href="../trade/index.html" class="card-link">Trade</a></p>
+                  <!--  EXAMPLE Php_Scripts/displayGames.php?week=2? -->
+                  <p class="hidden values d-none">2200 5433 3556 4423</p>
                </div>
                <div class="card-footer">
                   <div class="text-muted">Seeding: 5 <span style="float: right;">Shares Outstanding: 23</span></div>
@@ -139,30 +144,32 @@
          <br /><br />
          <div class="card-deck">
             <!-- TODO start loop with php and then print the following in right spot: TeamName | TeamName | CurrentPrice | TeamName | Values -->
-            <div class="card">
+				<div class="card">
                <h1 class="card-header">Kentucky</h1>
                <div class="card-img-top" id="Kentucky"></div>
                <div class="card-body">
                   <!-- Links -->
-                  <p style="Font-size: 2.6em;">$4,200</p>
-                  <p style="Font-size: 1.7em;"><a href="../trade/index.html" class="card-link">Trade</a></p>
-                  <!--  Php_Scripts/displayGames.php?week=2? -->
-                  <p class="hidden values d-none">2200 5433 0 4423 2233 2442</p>
+                  <p style="Font-size: 2.6em; display: inline;">$5,000</p>
+                  <p style="Font-size: 1.7em; display: inline; float: right; margin-right: 10px; margin-top: 10px;">
+				  <a href="../trade/index.html" class="card-link">Trade</a></p>
+                  <!--  EXAMPLE Php_Scripts/displayGames.php?week=2? -->
+                  <p class="hidden values d-none">2200 5433 3556 4423</p>
                </div>
                <div class="card-footer">
                   <div class="text-muted">Seeding: 5 <span style="float: right;">Shares Outstanding: 23</span></div>
                   <!--PRINT OUT STATUS AND SHARES OUTSTANDING -->
                </div>
             </div>
-            <div class="card">
+			<div class="card">
                <h1 class="card-header">Virgina</h1>
                <div class="card-img-top" id="Virgina"></div>
                <div class="card-body">
                   <!-- Links -->
-                  <p style="Font-size: 2.6em;">$4,000</p>
-                  <p style="Font-size: 1.7em;"><a href="../trade/index.html" class="card-link">Trade</a></p>
-                  <!--  Php_Scripts/displayGames.php?week=2? -->
-                  <p class="hidden values d-none">2200 5433 3556 4423 2233 2442</p>
+                  <p style="Font-size: 2.6em; display: inline;">$5,000</p>
+                  <p style="Font-size: 1.7em; display: inline; float: right; margin-right: 10px; margin-top: 10px;">
+				  <a href="../trade/index.html" class="card-link">Trade</a></p>
+                  <!--  EXAMPLE Php_Scripts/displayGames.php?week=2? -->
+                  <p class="hidden values d-none">2200 5433 3556 4423</p>
                </div>
                <div class="card-footer">
                   <div class="text-muted">Seeding: 5 <span style="float: right;">Shares Outstanding: 23</span></div>
@@ -181,59 +188,40 @@
 		 
 		 
       </div> 
-	  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <script type="text/javascript">
-         google.charts.load('current', {'packages':['corechart']});
-         
-         function drawChart() {
-         $('.card').each(function (index, value) { 
-         var TeamName =$(this).find("h1").text()
-         var values =$(this).find(".values").text()
-         var valueArray = values.split(" ")
-         
-          
-         var data = google.visualization.arrayToDataTable([
-         ['Round', 'Value'],
-         ['64',  parseInt(valueArray[0])],
-         ['32',  parseInt(valueArray[1])],
-         ['16',  parseInt(valueArray[2])],
-         ['8',  parseInt(valueArray[3])],
-         ['4',  parseInt(valueArray[4])],
-         ['2',  parseInt(valueArray[5])],
-		 ['1',  parseInt(valueArray[6])]
-         ]);
-         
-         var options = {
-         curveType: 'function',
-         legend: { position: 'bottom' }
-         };
-         var chart = new google.visualization.LineChart(document.getElementById(TeamName));
-         chart.draw(data, options);
-         });		
-         }
-		  
-      </script>
 	  
+	  
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});      
+ function drawChart() {
+	 $('.card').each(function (index, value) { 
+	 var TeamName =$(this).find("h1").text()
+	 var values =$(this).find(".values").text()
+	 var valueArray = values.split(" ")
 	 
-	  <script>
-		function searchTeam() {
-			var team = $("#searchINPUT").val()
-			var id = "#"  + team
-			var distance = $(id).offset().top
-				
-			 $(window).scrollTop(distance - 300);
-					 
-		 }
-		 
-$('#searchINPUT').keypress(function(event){
-  if(event.keyCode == 13){
-    searchTeam()
-  }
-});
-		
-	  </script>
 	  
+	 var data = google.visualization.arrayToDataTable([
+	 ['Round', 'Value'],
+	 ['64',  parseInt(valueArray[0])],
+	 ['32',  parseInt(valueArray[1])],
+	 ['16',  parseInt(valueArray[2])],
+	 ['8',  parseInt(valueArray[3])],
+	 ['4',  parseInt(valueArray[4])],
+	 ['2',  parseInt(valueArray[5])],
+	 ['1',  parseInt(valueArray[6])]
+	 ]);
+	 
+	 var options = {
+	 curveType: 'function',
+	 legend: { position: 'bottom' }
+	 };
+	 var chart = new google.visualization.LineChart(document.getElementById(TeamName));
+	 chart.draw(data, options);
+	 });		
+	 }
 	  
+</script>
+	  	  
 <datalist id="allTeams">
 	<option value="Missouri" />
 	<option value="Texas" />
