@@ -1,0 +1,53 @@
+body {
+	    background-color: rgba(0,0,0,.07);
+  }
+
+.app {
+ font-size: 1.3em;
+}
+	
+ #links a {
+	  float: right;
+	  display: inline;
+  }
+
+.header {
+	min-height: 130px;
+	padding: 30px;
+	width: 100%;
+	font-family: 'Alfa Slab One';
+}
+
+.fa-trophy {
+	color: gold;
+}
+
+#lab_social_icon_footer {
+	min-height: 60px;
+	font-size: 2em;
+	color: black;
+}
+
+#lab_social_icon_footer .linkk {
+	margin: 12px;
+	color: black;
+}
+
+#lab_social_icon_footer .fa-facebook-square:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer .fa-twitter:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer .fa-envelope-square:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer .fa-linkedin:hover {
+  color: red;
+}
+
+
+

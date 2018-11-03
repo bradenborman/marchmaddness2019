@@ -1,0 +1,10 @@
+body {
+	    background-color: rgba(0,0,0,.07);
+  }
+
+.header {
+	min-height: 130px;
+	padding: 30px;
+	width: 100%;
+	font-family: 'Alfa Slab One';
+}
