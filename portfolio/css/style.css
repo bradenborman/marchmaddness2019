@@ -41,6 +41,19 @@
 }
 
 
+
+.logo {
+	height: 3vh;
+	width: 3vh;
+	display: inline;
+}
+
+/* FOR LOGO IN TABLE */
+td:nth-child(1) {  
+  text-align: left;
+}
+
+
 @media (max-width: 575.98px) { 
 	.card {
 		margin-bottom: 15px;
@@ -51,4 +64,5 @@
 		font-size: 1.2em;
 	}
 
+	
 }
