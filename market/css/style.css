@@ -6,10 +6,12 @@ body {
 	   position: -webkit-sticky;
 		position: sticky;
 		top: 0;
+		margin-top: 35px;
 		padding-top: 20px;
 		padding-bottom: 5px;
 		z-index: 99;
 		background-color: #eeeeee;
+		transition: all 0.2s linear;
   }
   
  #links a {
@@ -62,8 +64,10 @@ body {
 ^^ HEADERS 
 */
 		
-		
-		
+.app {
+	margin-top: 35px;
+	text-align: center;
+}
 		
 		
 		

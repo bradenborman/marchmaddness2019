@@ -17,13 +17,15 @@
      
 
 	 <!-- IF FEE APPLIES PRINT CHECKED INTO HIDDEN INPUT ON BUY SECTION -->
+	 <!-- do logic ahead of time to determine if late to fee applies -->
+	 
 
-<div class="header bg-info mb-3">
-<h1>Courtside Cash</h1>
-</div>
+<header class="header"><div id="logo"></div>
+  <h1>College Basketball's Blue Chips</h1> 
+</header>
 
-         <div class="container">
-            <h3><span id="user">Braden Borman</span></h3>
+         <div class="container app">
+            <!-- <h3><span id="user">Braden Borman</span></h3> -->
             <h2>Capital available: <span id="cash">$1,000,000</span></h2>
             <div class="links">
                <a href="../market/index.html">Market</a>
@@ -33,29 +35,28 @@
          </div>
 		 
 		 <br><br>
-      <div class="container">
+      <div class="container TRADE_SECTION">
          <div class="card">
             <div class="card-header">
-               <h1>Missouri</h1>
+               <h1>Missouri</h1><img class="logo" src="https://fanapeel.com/wp-content/uploads/logo_-university-of-missouri-tigers-tiger-head-over-m-mizzou.png" />
                <h3 id="costPerShare">$25,000</h3>
-				
+				<br />
 				<i class="fas fa-shopping-cart"></i> <span id="totalSpent">$0</span>
-			
 			</div>
             <!-- TEAM NAME HERE -->
             <div class="card-body">
                <h6 class="card-title">Slide to the right to increase amount</h6>
                <br />
                <div class="row">
-                  <div class="col-md-6 text-center">
+                  <div id="BUY_SECTION" class="col-md-6 text-center">
                      <form action="php/buy.php" method="post" onsubmit="return validateBuyForm()">
                         <input onchange="updateBuyBTN(this.value)" class="slider" type="range" min="0" max="100" value="0" class="slider" id="buySlider" name="value">
-                        <input style="display: none;" type="checkbox" name="isFee" id="isFee" checked value="true" onChange="determineSliderValues()">
+                        <input style="display: none;" type="checkbox" name="isFee" id="isFee" CHECKED onChange="determineSliderValues()">
 						<br />
                         <button id="buyBTN" type="submit" class="buy btn btn-success">Buy</button>
                      </form>
                   </div>
-                  <div class="col-md-6 text-center">
+                  <div id="SELL_SECTION" class="col-md-6 text-center">
                      <form action="php/sell.php" method="post" onsubmit="return validateSellForm()">		
                         <input onchange="updateSellBTN(this.value)" class="slider" type="range" min="0" max="0" value="0" class="slider" id="sellSlider" name="value">						
                         <br />
@@ -68,7 +69,7 @@
       </div>
       <script>
 	  
-		//HARD CODED FOR TESTING
+		//HARD CODED FOR TESTING set to true
 		var lateToPartyFee = $("#isFee").attr("checked") ? true : false;
 	  
          function updateBuyBTN(value) {
@@ -87,7 +88,7 @@
 				
 			if(lateToPartyFee && value > 0) {
 				var spent = parseInt((value * cost)) + parseInt(cost)
-				$('#totalSpent').html("$" + ReplaceNumberWithCommas(spent) + "<br /> - \"Late to the Party\" fee applied. (<span style='color: red;'>$" + ReplaceNumberWithCommas(cost) + "</span>)")
+				$('#totalSpent').html("$" + ReplaceNumberWithCommas(spent) + "<br />  \"Late to the Party\" fee applied. (<span style='color: red;'>$" + ReplaceNumberWithCommas(cost) + "</span>)")
 			}
 			else {
 				var spent = value * cost 

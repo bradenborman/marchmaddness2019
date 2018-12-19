@@ -22,30 +22,13 @@
 
 <header class="header"><div id="logo"></div>
   <h1>College Basketball's Blue Chips</h1> 
-  <!-- <nav class="nav">
-    <ul>
-      <li>
-        <a href="#">Home</a>  
-      </li>
-      <li>
-        <a href="#">Downloads</a>
-      </li>
-      <li>
-        <a href="#">About</a>  
-      </li>
-      <li>
-        <a href="#">Contact Us</a>  
-      </li>
-      
-    </ul>
-  </nav> -->
 </header>   
 
 <div id="Info">
 	<div class="container">
 					<div class="row">
 							<div class="col-sm-12">
-								<h4><span id="user">Braden Borman</span></h4>					
+							<!--	<h4><span id="user">Braden Borman</span></h4>				 -->	
 							</div>
 						</div>
 					<div class="row">
@@ -76,10 +59,9 @@
 					<input type="checkbox" id="hideCheckbox" value="Bike"> Hide Charts?
 				</div>
 				
-		</div>
-		
+		</div>	
 </div>					
-		
+
 </div>
 </div>
 		
@@ -240,6 +222,37 @@ google.charts.load('current', {'packages':['corechart']});
 	 });		
 	 }
 	  
+	  
+	  
+	  
+</script>
+
+<script>
+	var distance = $('#Info').offset().top,
+    $window = $(window);
+
+$window.scroll(function() {
+    if ( $window.scrollTop() >= distance ) 
+        addBorder()
+	else 
+		removeBorder() 
+});
+
+
+function addBorder() {
+	$("#Info").css("border-bottom", "6px solid black");
+}
+
+
+function removeBorder()  {
+	$("#Info").css("border-bottom", "0px solid black");
+}
+
+
+
+
+
+
 </script>
 	  	  
 <datalist id="allTeams">
