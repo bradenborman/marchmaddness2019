@@ -47,7 +47,7 @@
                <div class="list-group">
                   <a href="changeRound.html" class="list-group-item list-group-item-action"><i class="fas fa-marker"></i> Change Round <span style="float: right" class="badge badge-primary badge-pill">64</span></a> <!-- PHP PRRINT CURRENT ROUND -->
                   <a href="lockunlock.html" class="list-group-item list-group-item-action"><i class="fas fa-lock-open"></i> Lock/Unlock </a>
-                  <a href="updateValue.html" class="list-group-item list-group-item-action"><i class="fas fa-money-bill-wave-alt"></i> Update Value</a>
+                  <a href="updateValue.html" class="list-group-item list-group-item-action"><i class="fas fa-money-bill-wave-alt"></i> New Value</a>
                </div>
             </div>
          </div>
@@ -58,16 +58,16 @@
 		<div class="row tool">
             <div class="col-sm-12">
                <center>
-                  <h3>Update Value</h3>
+                  <h3>New Value</h3>
                </center>
             </div>
 			<div class="col-sm-12">
 					
-					  <select style="margin-bottom: 20px;" name="team" class="custom-select-lg"><!-- SET PHP LOAD TEAMS LINK TO PHP SCRIPT THAT TAKE NAME AND DELETES -->
-						<option value="volvo">Large Custom Select Menu</option>
-						<option value="volvo">Volvo</option>
-						<option value="fiat">Fiat</option>
-						<option value="audi">Audi</option>
+					  <select id="teams" style="margin-bottom: 20px;" name="team" class="custom-select-lg"><!-- SET PHP LOAD TEAMS LINK TO PHP SCRIPT THAT TAKE NAME AND DELETES -->
+						<option value="1">Missouri</option>
+						<option value="2">Duke</option>
+						<option value="3">Purdue</option>
+						<option value="4">UCLA</option>
 					  </select>
 					  
 			
@@ -80,22 +80,38 @@
 					  <label for="teamName">Team Name:</label>
 					  <input readonly type="text" class="form-control" name="teamName" id="teamName">
 					  
-					  <label for="oldValue">old Value:</label>
+					  <label for="roundOf">Round of: </label>
+					  <input readonly type="text" class="form-control" value="64" name="roundOf" id="roundOf"> <!-- PHP PRRINT CURRENT ROUND -->
+					  
+					  <label for="oldValue">Old Value:</label>
 					  <input readonly type="text" class="form-control" name="oldValue" id="oldValue">
 					  
 					  <label for="newValue">New Value:</label>
 					  <input  type="text" class="form-control" name="newValue" id="newValue">
 					  
-
-						
 								<br />	<br />
 					  <button type="submit" class="btn btn-primary">Submit</button>			
 					</form>
-            </div>
-			
-			
-			
+            </div>	
          </div>
+		 
+		 
+		 
+		 
+<script>
+	$(document).ready(function(){
+	  $("#teams").change(function(){
+		var teamID = $(this).val()
+		var name = $("#teams option:selected").text();
+			$('#teamId').val(teamID)
+			$('#teamName').val(name)
+	  });
+	});
+</script>
+		 
+		 
+		 
+		 
 	 </div>
    </body>
 </html>
