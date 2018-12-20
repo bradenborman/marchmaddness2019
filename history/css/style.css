@@ -7,11 +7,12 @@ table {
 		}
 
 
- #links a {
-	  float: right;
-	  display: inline;
-	  margin-bottom: 15px;
-  }
+ .links {
+	 float: right;
+	 }
+	 .links a {
+	 margin-left: 15px;
+	 }
 
 .app {
 	margin-top: 50px; 
