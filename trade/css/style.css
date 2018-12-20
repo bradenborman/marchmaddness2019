@@ -151,15 +151,19 @@ input[type="range"] {
 		 @media screen and (max-width: 600px) {
 			 
 			  #BUY_SECTION {
-				 margin-top: 50px;
+				 margin-top: 20px;
 			 }
 			 
 			 #SELL_SECTION {
 				 margin-top: 40px;
 			 }
 			 
+			 .TRADE_SECTION {
+				margin-top: 0px;
+			}
 			 
-			 	.header>h1 {
+			 
+		.header>h1 {
 			font-size: 1.2em;
 		}
 	
@@ -173,4 +177,10 @@ input[type="range"] {
 				 margin: auto;
 				 margin-bottom: 80px;
 			 }
+			 
+			  .links {
+				  margin-top: 30px;
+				float: none;
+				text-align: center;
+			}
 }
