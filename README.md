@@ -31,3 +31,7 @@ SQL's:
 	
 	SELECT * FROM `Team` JOIN Price_History ON Team.Team_ID = Price_History.Team_ID order BY School, Price_History.Round_ID desc ////ORDER BY IS STILL IN!
 	
+	
+	SELECT * FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID WHERE USER_ID = '1'
+	///GETS ALL OWNED TEAM INFO -- amount, total spent so far, percent of market, price 
+	
