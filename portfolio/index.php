@@ -1,3 +1,15 @@
+<?php
+	require '../Php_Scripts/db_connect.php';
+	$Portfolio_sql = $conn->query("SELECT * FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID WHERE USER_ID = '1'");
+	$User_sql = $conn->query("SELECT * FROM `USER` WHERE `USER_ID` = '1'");
+	$Value_in_Shares_sql = $conn->query("SELECT SUM(CURRENT_PRICE * AMOUNT_OWNED) as totalSpent FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID WHERE USER_ID = '1'");
+	while ($r = mysqli_fetch_array($Value_in_Shares_sql)){
+		$Value_in_Shares = $r['totalSpent'];	
+	}
+	
+	
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +26,17 @@
   <script src="scripts/general.js"></script>
   </head>
 <body>
-<script>// PHP PRINT VARS unformatted	
-	var networth = "348345"
+<script>
+<?php
+while ($r = mysqli_fetch_array($User_sql)){
+	$Net_worth = $r['USER_CASH'] + $Value_in_Shares;
+?>
+	var networth = '<?php echo $Net_worth; ?>';
 	var standings = "6"
 	var leader = "234500"
 	var totalMoney = "1345200"
 	var currentRound = "32"
-</script>
-
-
+<?php } ?></script>
 <header class="header"><div id="logo"></div>
   <h1>College Basketball's Blue Chips</h1> 
 </header>
@@ -95,44 +109,22 @@
 										  <th scope="col"></th>
 										</tr>
 									  </thead>
-									  <tbody>
+									  <tbody><?php
+										while ($r = mysqli_fetch_array($Portfolio_sql)){
+										$AMOUNT_OWNED = $r['AMOUNT_OWNED'];
+										$MARKET_PRICE = $r['CURRENT_PRICE'];
+										$TOTAL_OWNED = $AMOUNT_OWNED * $MARKET_PRICE;			
+									?>				
 										<tr>
-										  <td><img class="logo" src="https://fanapeel.com/wp-content/uploads/logo_-university-of-missouri-tigers-tiger-head-over-m-mizzou.png" /> Missouri</td>
-										  <td>14</td>
-										  <td>$8,200</td>
-										  <td>$15,500</td>
-										  <td><button type="button" class="btn btn-primary" onclick='goToTradeCentral("Missouri")'>Trade</button></td>
-										</tr>
-										<tr>
-										  <td><img class="logo" src="https://1000logos.net/wp-content/uploads/2017/11/Duke-University-Logo.png" /> Duke</td>
-										  <td>20</td>
-										  <td>$2,200</td>
-										  <td>$35,000</td>
-										  <td><button type="button" class="btn btn-primary">Trade</button></td>
-										</tr>
-										<tr>
-										  <td><img class="logo" src="https://cdn.freebiesupply.com/logos/large/2x/kansas-jayhawks-1-logo-png-transparent.png" /> Kansas</td>
-										  <td>5</td>
-										  <td>$5,700</td>
-										  <td>$7,400</td>
-										  <td><button type="button" class="btn btn-primary">Trade</button></td>
-										</tr>
-										<tr>
-										  <td><img class="logo" src="https://www.clipartmax.com/png/middle/127-1276370_unlv-rebels-university-of-nevada-las-vegas-logo.png" /> UNLV</td>
-										  <td>25</td>
-										  <td>$1,700</td>
-										  <td>$29,400</td>
-										  <td><button type="button" class="btn btn-primary">Trade</button></td>
-										</tr>
-										<tr>
-										  <td><img class="logo" src="https://www.logolynx.com/images/logolynx/e5/e5502de5028331c4dacdd021aec200ce.png" /> Virgina</td>
-										  <td>14</td>
-										  <td>$3,700</td>
-										  <td>$24,400</td>
-										  <td><button type="button" class="btn btn-primary">Trade</button></td>
-										</tr>
-
-									  </tbody>
+										  <td><?php echo '<img class="logo" src="'.$r['LOGO_URL'].'" />'; echo ' '. $r['TEAM_NAME']; ?></td>
+										  <td><?php echo $AMOUNT_OWNED; ?></td>
+										  <td><?php echo '$' .number_format($MARKET_PRICE); ?></td>
+										  <td><?php echo '$' .number_format($TOTAL_OWNED); ?></td>
+										  <td><button type="button" class="btn btn-primary" onclick='goToTradeCentral("<?php echo $r['TEAM_ID']; ?>")'>Trade</button></td>
+										</tr>									
+									<?php					
+									}										
+									?></tbody>
 									</table>
 								<div class="card-footer"><i><b>As of: </b><span id="dateTime"></span></i></div>
 								</div>
@@ -144,7 +136,7 @@
 						<div class="card-body">
 							<ul class="nav flex-column">
 							<li class="nav-item">
-							  <a class="nav-link" href="../market/index.html">View Market</a>
+							  <a class="nav-link" href="../market/">View Market</a>
 							</li>
 							<li class="nav-item">
 							  <a class="nav-link" href="../leaderboard/index.html">View Leaderboard</a>
