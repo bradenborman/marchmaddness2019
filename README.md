@@ -35,3 +35,8 @@ SQL's:
 	SELECT * FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID WHERE USER_ID = '1'
 	///GETS ALL OWNED TEAM INFO -- amount, total spent so far, percent of market, price 
 	
+
+
+	SELECT SUM(CURRENT_PRICE * AMOUNT_OWNED) as totalSpent FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID WHERE USER_ID = '1'
+	//gets the total portfolio value by user id
+
