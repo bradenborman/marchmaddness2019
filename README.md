@@ -2,25 +2,29 @@
 
 //UPDATE BUY AND SELL TO LOOK FOR IS UNLOCK
 
+	Right side of leaderboard display game purse and note about who qualifies for winning. 
 
-	//TODO 
-			
-			Pull random quotes to display on log in page
-			
-		On portfolio page: 
-			
-			Transaction log
-			snap shot of info
-				balence
-				leader value 
-				current round 
-				last transaction
-				% of diff since started 
+
+
+	FOR MOBILE: 
+		
+	Bigget text and center option links in portfolio
+	
+	Bigger img logo for teams in portfolio
+	
+	Hide search bar in market 
+	
+	Full width for cards on landing page
+
+
+
+
+
+
+
 		
 		
-		IPO maybe
-
-		LATE to the party fee: If there are more than 50 shares out standing => Fee of the cost of one share is tacked on 
+		
 		
 
 SQL's:
@@ -45,6 +49,7 @@ SQL's:
 	
 	
 	SELECT SUM(CURRENT_PRICE * AMOUNT_OWNED) + (SELECT SUM(USER_CASH) from USER) FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID   //GETS ALL THE CASH IN PLAY
+	
+	SELECT *, SUM(AMOUNT_OWNED) FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID where OWNS.TEAM_ID = '1'
 
 
-SELECT *, SUM(AMOUNT_OWNED) FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID where OWNS.TEAM_ID = '1'
