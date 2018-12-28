@@ -1,11 +1,14 @@
 <?php
 	require '../Php_Scripts/db_connect.php';
-	$Portfolio_sql = $conn->query("SELECT * FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID WHERE USER_ID = '1'");
-	$User_sql = $conn->query("SELECT * FROM `USER` WHERE `USER_ID` = '1'");
-	$Value_in_Shares_sql = $conn->query("SELECT SUM(CURRENT_PRICE * AMOUNT_OWNED) as totalSpent FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID WHERE USER_ID = '1'");
-	while ($r = mysqli_fetch_array($Value_in_Shares_sql)){
-		$Value_in_Shares = $r['totalSpent'];	
-	}
+	require '../Php_Scripts/getCurrentRound.php'; //gets $CurrentRound
+	require 'Php_Scripts/loginManager.php'; // handles login returns $ID
+	require 'Php_Scripts/getValueInShare.php'; // gets $Value_in_Shares
+	require 'Php_Scripts/getTotalMoneyInPlay.php'; // gets $GRAND_TOTAL_IN_PLAY	
+	require 'Php_Scripts/getTotalTransactions.php'; // gets $totalTransactions && $MYtotalTransActions
+	
+		
+	$Portfolio_sql = $conn->query("SELECT * FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID WHERE USER_ID = '$ID' and AMOUNT_OWNED > 0");
+	$User_sql = $conn->query("SELECT * FROM `USER` WHERE `USER_ID` = '$ID'");
 	
 	
 ?>
@@ -32,10 +35,10 @@ while ($r = mysqli_fetch_array($User_sql)){
 	$Net_worth = $r['USER_CASH'] + $Value_in_Shares;
 ?>
 	var networth = '<?php echo $Net_worth; ?>';
-	var standings = "6"
-	var leader = "234500"
-	var totalMoney = "1345200"
-	var currentRound = "32"
+	var standings = "To do"
+	var leader =  "To do"
+	var totalMoney = '<?php echo $GRAND_TOTAL_IN_PLAY; ?>';
+	var currentRound =  '<?php echo $CurrentRound; ?>';
 <?php } ?></script>
 <header class="header"><div id="logo"></div>
   <h1>College Basketball's Blue Chips</h1> 
@@ -59,7 +62,7 @@ while ($r = mysqli_fetch_array($User_sql)){
 								</div>	
 								<div class="row">
 									<div class="col-lg-12">
-										<p><b><h5>My Total Transactions: </b><span id="Transactions">8</span><h5></p>
+										<p><b><h5>My Total Transactions: </b><span id="Transactions"><?php echo $MYtotalTransActions; ?></span><h5></p>
 									</div>
 								</div>	
 							</div> 
@@ -81,13 +84,13 @@ while ($r = mysqli_fetch_array($User_sql)){
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-lg-6">
+								<div class="col-lg-12">
 									<p><b>Current Round:</b> <span id="CurrentRound"></span></p>
 								</div>
 							</div>	
 							<div class="row">
 								<div class="col-lg-12">
-									<p><b>Total Transactions thus far:</b> <span id="GrandTransactions">76</span></p>
+									<p><b>Total Transactions thus far:</b> <span id="GrandTransactions"><?php echo $totalTransActions ; ?></span></p>
 								</div>
 							</div>	
 						</div> 						
@@ -97,7 +100,8 @@ while ($r = mysqli_fetch_array($User_sql)){
 		  <div class="row"><!-- FOR EACH TEAM -- PRINT JAVASCRIPT FUNCTION THAT TAKES IN TEAM NAME OR ID CREATE FUNCTION THAT HEADS TO TRADE PAGE WITH TEAM NAME SET-->
 				<div class="col-lg-8">
 						<div class="card">
-						<div class="card-header"><h2><i class="fas fa-money-bill-alt"></i> My Investments</h2></div>
+						<div class="card-header"><h2><i class="fas fa-money-bill-alt"></i> My Investments</h2> $<?php echo number_format($Value_in_Shares)
+						; ?></div>
 								<div class="table-responsive-sm">
 								<table class="table table-hover table-striped text-center">
 									  <thead>
@@ -116,11 +120,21 @@ while ($r = mysqli_fetch_array($User_sql)){
 										$TOTAL_OWNED = $AMOUNT_OWNED * $MARKET_PRICE;			
 									?>				
 										<tr>
-										  <td><?php echo '<img class="logo" src="'.$r['LOGO_URL'].'" />'; echo ' '. $r['TEAM_NAME']; ?></td>
+										  <td><?php echo '<img class="logo" src="'.$r['LOGO_URL'].'" />'; 
+										  if($r['TEAM_IS_KNOCKED_OUT']) echo '<span style="text-decoration: line-through;">';
+										  echo ' ' .$r['TEAM_NAME']; 
+										  if($r['TEAM_IS_KNOCKED_OUT']) echo '</span>';
+										  ?></td>
+										  
+										  
 										  <td><?php echo $AMOUNT_OWNED; ?></td>
 										  <td><?php echo '$' .number_format($MARKET_PRICE); ?></td>
 										  <td><?php echo '$' .number_format($TOTAL_OWNED); ?></td>
-										  <td><button type="button" class="btn btn-primary" onclick='goToTradeCentral("<?php echo $r['TEAM_ID']; ?>")'>Trade</button></td>
+										  <td><button type="button"
+										  <?php if($r['ISTEAMLOCKED']) echo 'disabled'; ?>
+										   class="btn btn-primary" onclick='goToTradeCentral("<?php echo $r['TEAM_ID']; ?>")'>
+										  <?php if($r['ISTEAMLOCKED']) echo '<i class="fa fa-lock" aria-hidden="true"></i>'; ?> Trade
+										  </button></td>
 										</tr>									
 									<?php					
 									}										
@@ -151,7 +165,7 @@ while ($r = mysqli_fetch_array($User_sql)){
 							  <a class="nav-link" href="../rules/index.html">Extended Rules</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link" href="../index.html">Log-out</a> <!-- To PHP SCRIPT THAT LOGS OUT THEN HEADS TO HOME PAGE -->
+							  <a class="nav-link" href="Php_Scripts/logout.php">Log-out</a> <!-- To PHP SCRIPT THAT LOGS OUT THEN HEADS TO HOME PAGE -->
 							</li>
 						  </ul>
 						</div> 

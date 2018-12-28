@@ -1,0 +1,158 @@
+[27-Dec-2018 18:28:52 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 6
+[27-Dec-2018 18:35:46 UTC] PHP Notice:  Undefined variable: ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 18
+[27-Dec-2018 18:35:46 UTC] PHP Notice:  Undefined variable: Team_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 18
+[27-Dec-2018 18:47:12 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 30
+[27-Dec-2018 18:54:36 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 18:56:00 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:00:19 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:01:30 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:04:34 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:05:44 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:06:01 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:07:50 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:08:35 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:13:23 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:13:47 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 19:28:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 6
+[27-Dec-2018 19:28:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 6
+[27-Dec-2018 19:28:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 6
+[27-Dec-2018 19:29:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 6
+[27-Dec-2018 19:30:22 UTC] PHP Notice:  Undefined variable: teamID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 16
+[27-Dec-2018 19:30:30 UTC] PHP Notice:  Undefined variable: teamID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 16
+[27-Dec-2018 19:30:32 UTC] PHP Notice:  Undefined variable: teamID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 16
+[27-Dec-2018 19:30:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 6
+[27-Dec-2018 19:30:44 UTC] PHP Notice:  Undefined variable: teamID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 16
+[27-Dec-2018 19:31:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 5
+[27-Dec-2018 19:31:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 5
+[27-Dec-2018 19:32:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 5
+[27-Dec-2018 19:32:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 5
+[27-Dec-2018 19:32:48 UTC] PHP Notice:  Undefined index: team in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 9
+[27-Dec-2018 19:32:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 5
+[27-Dec-2018 19:43:40 UTC] PHP Notice:  Undefined index: team in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/removeTeam.php on line 5
+[27-Dec-2018 19:50:32 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeRound.php on line 13
+[27-Dec-2018 19:50:47 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeRound.php on line 13
+[27-Dec-2018 19:50:50 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeRound.php on line 13
+[27-Dec-2018 19:51:12 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeRound.php on line 13
+[27-Dec-2018 19:51:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeRound.php on line 7
+[27-Dec-2018 19:53:13 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeRound.php on line 5
+[27-Dec-2018 19:53:55 UTC] PHP Notice:  Undefined index: roundOf in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeRound.php on line 7
+[27-Dec-2018 20:04:06 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 20:07:31 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[27-Dec-2018 20:22:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function test_input() in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 3
+[27-Dec-2018 20:25:12 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 4
+[27-Dec-2018 20:25:12 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 5
+[27-Dec-2018 20:26:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 15
+[27-Dec-2018 20:26:46 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 15
+[27-Dec-2018 20:26:49 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 15
+[27-Dec-2018 20:32:19 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 4
+[27-Dec-2018 20:33:22 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 4
+[27-Dec-2018 20:34:07 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 20:34:17 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 20:34:17 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 20:34:17 UTC] PHP Notice:  Undefined index: team in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 8
+[27-Dec-2018 20:34:33 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 20:34:33 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 20:34:33 UTC] PHP Notice:  Undefined index: team in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 8
+[27-Dec-2018 20:48:16 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 20:48:16 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 20:54:34 UTC] PHP Parse error:  syntax error, unexpected '$TEAM_ID' (T_VARIABLE) in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/displayStatus.php on line 20
+[27-Dec-2018 20:54:37 UTC] PHP Parse error:  syntax error, unexpected '$TEAM_ID' (T_VARIABLE) in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/displayStatus.php on line 20
+[27-Dec-2018 20:54:56 UTC] PHP Parse error:  syntax error, unexpected '$TEAM_ID' (T_VARIABLE) in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/displayStatus.php on line 20
+[27-Dec-2018 21:15:54 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:16:26 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:16:26 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:17:19 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:17:19 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:18:18 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:18:31 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:18:54 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:19:29 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:19:29 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:19:29 UTC] PHP Notice:  Undefined index: team in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 8
+[27-Dec-2018 21:19:39 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:19:39 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:22:42 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:23:36 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:23:43 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:23:43 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:24:29 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:24:29 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:24:36 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:24:43 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:25:15 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:26:48 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:26:48 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 21:33:01 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 21:33:01 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 23:09:30 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 23:09:35 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 23:09:35 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 23:09:39 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 23:09:39 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 23:16:04 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 23:16:12 UTC] PHP Notice:  Undefined index: isLocked in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 6
+[27-Dec-2018 23:16:12 UTC] PHP Notice:  Undefined index: isKnockedOut in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/lock_unlock.php on line 7
+[27-Dec-2018 23:36:10 UTC] PHP Parse error:  syntax error, unexpected '$Team_sql' (T_VARIABLE) in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 10
+[27-Dec-2018 23:36:14 UTC] PHP Parse error:  syntax error, unexpected '$Team_sql' (T_VARIABLE) in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 10
+[27-Dec-2018 23:36:24 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:36:24 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:36:27 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:36:27 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:36:53 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:36:53 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:36:54 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:36:54 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:37:56 UTC] PHP Notice:  Undefined variable: row in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 16
+[27-Dec-2018 23:37:57 UTC] PHP Notice:  Undefined variable: row in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 16
+[27-Dec-2018 23:38:05 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:38:05 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:38:06 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:38:06 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 2
+[27-Dec-2018 23:38:40 UTC] PHP Notice:  Undefined variable: row in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getOldValue.php on line 15
+[28-Dec-2018 00:02:20 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeValue.php on line 38
+[28-Dec-2018 00:03:22 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeValue.php on line 38
+[28-Dec-2018 00:05:08 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeValue.php on line 38
+[28-Dec-2018 00:06:04 UTC] PHP Notice:  Undefined index: teamId in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeValue.php on line 5
+[28-Dec-2018 00:06:04 UTC] PHP Notice:  Undefined index: roundOf in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeValue.php on line 6
+[28-Dec-2018 00:06:04 UTC] PHP Notice:  Undefined index: oldValue in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeValue.php on line 7
+[28-Dec-2018 00:06:04 UTC] PHP Notice:  Undefined index: newValue in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeValue.php on line 8
+[28-Dec-2018 00:06:04 UTC] PHP Warning:  A non-numeric value encountered in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/changeValue.php on line 10
+[28-Dec-2018 00:16:44 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[28-Dec-2018 00:17:11 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[28-Dec-2018 00:17:54 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[28-Dec-2018 00:18:18 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[28-Dec-2018 00:18:39 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24
+[28-Dec-2018 00:19:09 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/addTeam.php on line 24

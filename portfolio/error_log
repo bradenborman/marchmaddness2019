@@ -1,3 +1,32 @@
 [22-Dec-2018 15:30:12 UTC] PHP Notice:  Undefined index: AMOUNT_OWNDED in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 5
 [22-Dec-2018 15:30:12 UTC] PHP Notice:  Undefined index: AMOUNT_OWNDED in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 5
 [22-Dec-2018 15:31:50 UTC] PHP Parse error:  syntax error, unexpected 'TEAM_NAME' (T_STRING), expecting ',' or ';' in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 5
+[22-Dec-2018 17:03:55 UTC] PHP Notice:  Undefined index: grandTotal in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 11
+[22-Dec-2018 17:04:23 UTC] PHP Notice:  Undefined index: grandTotal in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 11
+[22-Dec-2018 17:04:25 UTC] PHP Notice:  Undefined index: grandTotal in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 11
+[22-Dec-2018 17:16:15 UTC] PHP Parse error:  syntax error, unexpected 'break' (T_BREAK) in /home/pju37s1wsyzx/public_html/Php_Scripts/getCurrentRound.php on line 13
+[22-Dec-2018 18:36:59 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 23
+[22-Dec-2018 18:37:31 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 21
+[22-Dec-2018 18:37:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 21
+[26-Dec-2018 18:31:36 UTC] PHP Notice:  Undefined variable: ID in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 8
+[26-Dec-2018 18:35:49 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/loginManager.php on line 6
+[26-Dec-2018 18:36:10 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/loginManager.php on line 6
+[26-Dec-2018 18:36:31 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/loginManager.php on line 6
+[26-Dec-2018 18:37:00 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/loginManager.php on line 6
+[26-Dec-2018 18:37:00 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 8
+[26-Dec-2018 18:37:02 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/loginManager.php on line 6
+[26-Dec-2018 18:37:02 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 8
+[26-Dec-2018 18:38:02 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/loginManager.php on line 6
+[26-Dec-2018 18:39:04 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/loginManager.php on line 7
+[26-Dec-2018 18:39:04 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 9
+[26-Dec-2018 18:40:08 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/loginManager.php on line 7
+[26-Dec-2018 18:40:08 UTC] PHP Notice:  Undefined index: username in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 9
+[26-Dec-2018 18:40:08 UTC] PHP Notice:  Undefined variable: Username in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 11
+[27-Dec-2018 01:15:48 UTC] PHP Notice:  Undefined variable: totalTransActions in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 66
+[27-Dec-2018 01:18:02 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/getTotalTransactions.php on line 12
+[27-Dec-2018 01:19:56 UTC] PHP Notice:  Undefined index: TOTAL_TRANSACTIONS in /home/pju37s1wsyzx/public_html/portfolio/Php_Scripts/getTotalTransactions.php on line 11
+[27-Dec-2018 01:25:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function nameBuilder() in /home/pju37s1wsyzx/public_html/portfolio/index.php:127
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 127
+[27-Dec-2018 01:30:44 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/pju37s1wsyzx/public_html/portfolio/index.php on line 125

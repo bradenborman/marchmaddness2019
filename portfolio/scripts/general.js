@@ -17,7 +17,7 @@ $(document).ready(function(){
 
 //PHP send with url vars
 function goToTradeCentral(teamID) {
-	window.location.href = "../trade/index.php?team=" + teamID;
+	window.location.href = "../trade/?team=" + teamID;
 }
 
 

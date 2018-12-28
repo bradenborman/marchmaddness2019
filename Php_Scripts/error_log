@@ -1,0 +1,319 @@
+[25-Dec-2018 23:40:28 UTC] PHP Warning:  require(/Php_Scripts/db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:40:28 UTC] PHP Fatal error:  require(): Failed opening required '/Php_Scripts/db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:40:39 UTC] PHP Warning:  require(Php_Scripts/db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:40:39 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:40:54 UTC] PHP Warning:  require(Php_Scripts/db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:40:54 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:41:15 UTC] PHP Warning:  require(Php_Scripts/db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:41:15 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:41:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:26
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 26
+[25-Dec-2018 23:41:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[25-Dec-2018 23:41:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[25-Dec-2018 23:42:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 12
+[25-Dec-2018 23:42:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[25-Dec-2018 23:42:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 12
+[25-Dec-2018 23:43:13 UTC] PHP Notice:  Undefined variable: hint in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 27
+[25-Dec-2018 23:43:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 32
+[25-Dec-2018 23:43:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 12
+[25-Dec-2018 23:43:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 12
+[25-Dec-2018 23:43:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 18
+[25-Dec-2018 23:44:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 33
+[25-Dec-2018 23:44:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 33
+[25-Dec-2018 23:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 33
+[25-Dec-2018 23:44:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 33
+[25-Dec-2018 23:45:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 37
+[25-Dec-2018 23:45:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:37
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 37
+[25-Dec-2018 23:45:42 UTC] PHP Notice:  Undefined variable: fname in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 11
+[25-Dec-2018 23:45:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 31
+[25-Dec-2018 23:45:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 10
+[25-Dec-2018 23:46:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 10
+[25-Dec-2018 23:46:51 UTC] PHP Notice:  Undefined index: fname in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 14
+[25-Dec-2018 23:46:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 34
+[25-Dec-2018 23:46:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 10
+[25-Dec-2018 23:47:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 10
+[25-Dec-2018 23:47:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 7
+[25-Dec-2018 23:48:01 UTC] PHP Notice:  Undefined index: fname in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 13
+[25-Dec-2018 23:48:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 33
+[25-Dec-2018 23:48:02 UTC] PHP Notice:  Undefined index: fname in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 13
+[25-Dec-2018 23:48:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:33
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 33
+[25-Dec-2018 23:48:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 16
+[25-Dec-2018 23:49:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 16
+[25-Dec-2018 23:49:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_escape_string() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 23
+[25-Dec-2018 23:51:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:31
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 31
+[25-Dec-2018 23:52:52 UTC] PHP Notice:  Undefined variable: fname in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 22
+[25-Dec-2018 23:52:52 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 25
+[25-Dec-2018 23:52:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 27
+[25-Dec-2018 23:52:53 UTC] PHP Notice:  Undefined variable: fname in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 22
+[25-Dec-2018 23:52:53 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 25
+[25-Dec-2018 23:52:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 27
+[25-Dec-2018 23:52:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 27
+[25-Dec-2018 23:53:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 27
+[25-Dec-2018 23:54:02 UTC] PHP Notice:  Undefined variable: fname in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 22
+[25-Dec-2018 23:54:02 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 25
+[25-Dec-2018 23:54:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 27
+[25-Dec-2018 23:54:03 UTC] PHP Notice:  Undefined variable: fname in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 22
+[25-Dec-2018 23:54:03 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 25
+[25-Dec-2018 23:54:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 27
+[25-Dec-2018 23:54:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 27
+[25-Dec-2018 23:54:27 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 26
+[25-Dec-2018 23:54:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[25-Dec-2018 23:54:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[25-Dec-2018 23:54:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php:29
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[25-Dec-2018 23:56:05 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 24
+[25-Dec-2018 23:56:38 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 24
+[25-Dec-2018 23:57:02 UTC] PHP Warning:  require(/db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:57:02 UTC] PHP Fatal error:  require(): Failed opening required '/db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 2
+[25-Dec-2018 23:57:12 UTC] PHP Recoverable fatal error:  Object of class mysqli could not be converted to string in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 4
+[25-Dec-2018 23:57:25 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 26
+[25-Dec-2018 23:57:25 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 28
+[25-Dec-2018 23:57:58 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 23
+[25-Dec-2018 23:57:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 25
+[25-Dec-2018 23:57:59 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 23
+[25-Dec-2018 23:57:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 25
+[25-Dec-2018 23:59:27 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 26
+[25-Dec-2018 23:59:27 UTC] PHP Notice:  Undefined variable: sql in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[25-Dec-2018 23:59:41 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 26
+[25-Dec-2018 23:59:41 UTC] PHP Notice:  Undefined variable: sql in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[25-Dec-2018 23:59:46 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 26
+[25-Dec-2018 23:59:46 UTC] PHP Notice:  Undefined variable: sql in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[26-Dec-2018 00:00:10 UTC] PHP Parse error:  syntax error, unexpected '$email' (T_VARIABLE), expecting ',' or ')' in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 26
+[26-Dec-2018 00:00:35 UTC] PHP Notice:  Undefined variable: sql in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[26-Dec-2018 00:00:42 UTC] PHP Notice:  Undefined variable: sql in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[26-Dec-2018 00:01:15 UTC] PHP Parse error:  syntax error, unexpected '`', expecting ',' or ')' in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 26
+[26-Dec-2018 00:06:04 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 22
+[26-Dec-2018 00:06:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 24
+[26-Dec-2018 00:06:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 24
+[26-Dec-2018 00:06:20 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 22
+[26-Dec-2018 00:06:20 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 24
+[26-Dec-2018 00:06:23 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 24
+[26-Dec-2018 00:06:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 24
+[26-Dec-2018 00:07:24 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 26
+[26-Dec-2018 00:07:42 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 22
+[26-Dec-2018 00:07:42 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 24
+[26-Dec-2018 00:07:42 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[26-Dec-2018 00:07:50 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 29
+[26-Dec-2018 00:08:05 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 22
+[26-Dec-2018 00:08:05 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 24
+[26-Dec-2018 00:17:40 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 25
+[26-Dec-2018 00:23:37 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 25
+[26-Dec-2018 00:26:29 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 53
+[26-Dec-2018 00:34:33 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 49
+[26-Dec-2018 18:18:55 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 49
+[26-Dec-2018 18:30:44 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 49
+[26-Dec-2018 18:46:52 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 18:46:52 UTC] PHP Warning:  require(Php_Scripts/db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 2
+[26-Dec-2018 18:46:52 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 2
+[26-Dec-2018 18:47:23 UTC] PHP Warning:  Unterminated comment starting line 14 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 14
+[26-Dec-2018 18:47:23 UTC] PHP Warning:  require(Php_Scripts/db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 2
+[26-Dec-2018 18:47:23 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 2
+[26-Dec-2018 18:47:46 UTC] PHP Warning:  Unterminated comment starting line 14 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 14
+[26-Dec-2018 18:47:46 UTC] PHP Warning:  require(Php_Scripts/db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 2
+[26-Dec-2018 18:47:46 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 2
+[26-Dec-2018 18:48:06 UTC] PHP Warning:  Unterminated comment starting line 14 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 14
+[26-Dec-2018 18:48:06 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 11
+[26-Dec-2018 18:48:29 UTC] PHP Warning:  Unterminated comment starting line 14 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 14
+[26-Dec-2018 18:48:48 UTC] PHP Warning:  Unterminated comment starting line 37 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 37
+[26-Dec-2018 18:49:17 UTC] PHP Warning:  Unterminated comment starting line 37 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 37
+[26-Dec-2018 18:49:26 UTC] PHP Warning:  Unterminated comment starting line 37 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 37
+[26-Dec-2018 18:49:26 UTC] PHP Notice:  Undefined index: $password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 18
+[26-Dec-2018 18:49:34 UTC] PHP Warning:  Unterminated comment starting line 37 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 37
+[26-Dec-2018 18:49:35 UTC] PHP Notice:  Undefined index: $password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 18
+[26-Dec-2018 18:50:11 UTC] PHP Warning:  Unterminated comment starting line 38 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 38
+[26-Dec-2018 18:50:12 UTC] PHP Notice:  Undefined index: $password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 18
+[26-Dec-2018 18:50:37 UTC] PHP Warning:  Unterminated comment starting line 33 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 33
+[26-Dec-2018 18:50:38 UTC] PHP Notice:  Undefined index: $password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 18
+[26-Dec-2018 18:51:04 UTC] PHP Warning:  Unterminated comment starting line 31 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 31
+[26-Dec-2018 18:51:04 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:51:39 UTC] PHP Warning:  Unterminated comment starting line 31 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 31
+[26-Dec-2018 18:51:39 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:51:52 UTC] PHP Warning:  Unterminated comment starting line 31 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 31
+[26-Dec-2018 18:51:52 UTC] PHP Notice:  Undefined index: $password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 15
+[26-Dec-2018 18:52:15 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 17
+[26-Dec-2018 18:52:21 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 18:52:22 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:52:23 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 18:52:23 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:52:36 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 18:52:37 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:52:37 UTC] PHP Notice:  Undefined index: $password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 16
+[26-Dec-2018 18:52:56 UTC] PHP Warning:  Unterminated comment starting line 31 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 31
+[26-Dec-2018 18:52:57 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:52:57 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 15
+[26-Dec-2018 18:52:58 UTC] PHP Warning:  Unterminated comment starting line 31 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 31
+[26-Dec-2018 18:52:58 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:52:58 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 15
+[26-Dec-2018 18:53:23 UTC] PHP Warning:  Unterminated comment starting line 35 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 35
+[26-Dec-2018 18:53:23 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:53:23 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 15
+[26-Dec-2018 18:53:23 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 19
+[26-Dec-2018 18:53:31 UTC] PHP Warning:  Unterminated comment starting line 35 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 35
+[26-Dec-2018 18:53:31 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 15
+[26-Dec-2018 18:53:31 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 19
+[26-Dec-2018 18:53:41 UTC] PHP Warning:  Unterminated comment starting line 35 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 35
+[26-Dec-2018 18:53:41 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 15
+[26-Dec-2018 18:53:41 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 19
+[26-Dec-2018 18:53:59 UTC] PHP Warning:  Unterminated comment starting line 35 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 35
+[26-Dec-2018 18:53:59 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:53:59 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 15
+[26-Dec-2018 18:53:59 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 19
+[26-Dec-2018 18:54:20 UTC] PHP Warning:  Unterminated comment starting line 35 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 35
+[26-Dec-2018 18:54:20 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 10
+[26-Dec-2018 18:54:20 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 12
+[26-Dec-2018 18:54:20 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 15
+[26-Dec-2018 18:54:20 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 19
+[26-Dec-2018 18:54:24 UTC] PHP Warning:  Unterminated comment starting line 35 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 35
+[26-Dec-2018 18:54:24 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 15
+[26-Dec-2018 18:54:24 UTC] PHP Notice:  Undefined index: password in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 19
+[26-Dec-2018 18:55:08 UTC] PHP Warning:  Unterminated comment starting line 34 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 34
+[26-Dec-2018 18:55:08 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 11
+[26-Dec-2018 18:55:09 UTC] PHP Warning:  Unterminated comment starting line 34 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 34
+[26-Dec-2018 18:55:10 UTC] PHP Notice:  Undefined variable: email in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 11
+[26-Dec-2018 18:55:27 UTC] PHP Warning:  Unterminated comment starting line 32 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 32
+[26-Dec-2018 18:55:28 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 18:56:00 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 18:56:00 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 18:56:21 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 18:56:21 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 18:56:56 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 18:58:03 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 18:58:03 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 18:59:56 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 18:59:57 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 19:04:30 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 19:04:30 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 19:04:39 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 19:04:40 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 19:06:33 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 19:06:33 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 19:07:18 UTC] PHP Warning:  Unterminated comment starting line 30 in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 30
+[26-Dec-2018 19:07:18 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 19:20:17 UTC] PHP Notice:  Undefined variable: PASSWORD_HINT in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 26
+[26-Dec-2018 19:24:53 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 19:27:01 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 19:27:57 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 19:28:40 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/createUser.php on line 49
+[26-Dec-2018 19:29:10 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 19:38:15 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[26-Dec-2018 22:44:34 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[27-Dec-2018 01:48:28 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[27-Dec-2018 13:50:32 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[27-Dec-2018 21:29:34 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[27-Dec-2018 23:08:54 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20
+[28-Dec-2018 00:23:28 UTC] PHP Warning:  Use of undefined constant username - assumed 'username' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/Php_Scripts/login.php on line 20

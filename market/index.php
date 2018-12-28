@@ -1,7 +1,15 @@
 <?php
+	$MyTeams = array();
 	require '../Php_Scripts/db_connect.php';
 	require 'Php_Scripts/set_current_week.php'; // Sets $Current_round; 	
-	$All_Teams = $conn->query("SELECT * FROM `TEAMS`");	
+	require 'Php_Scripts/loginManager.php'; // Sets $ID
+	require 'Php_Scripts/getTeamsUserOwns.php'; // $MyTeams array
+	$All_Teams = $conn->query("SELECT *, (SELECT SUM(AMOUNT_OWNED) FROM `OWNS` WHERE OWNS.TEAM_ID = TEAMS.TEAM_ID) as SHARES_OUTSTANDING FROM TEAMS ORDER BY TEAM_SEEDING");	
+	$CASH_SQL = $conn->query("SELECT USER_CASH FROM `USER` WHERE USER_ID = '$ID'");	
+	while ($r = mysqli_fetch_array($CASH_SQL)) {
+		 $CASH_TO_SPEND = $r['USER_CASH'];
+	}
+				
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +46,7 @@
 						</div>
 					<div class="row">
 						<div class="col-sm-6">
-						   <h4 style="display: inline;">Capital available: <span id="cash">$100,000</span></h4>
+						   <h4 style="display: inline;">Capital available: <span id="cash">$<?php echo number_format($CASH_TO_SPEND); ?> </span></h4>
 						</div>
 					<div class="col-sm-6">
 							<div id="links">																
@@ -90,6 +98,9 @@
 	{
 		$price_array = array();
 		$team_id = $row['TEAM_ID'];
+		
+	
+		
 		$All_PRICES_SQL = $conn->query("SELECT VALUE FROM `PRICE_HISTORY` WHERE Team_ID = $team_id order BY Round_ID DESC");
 		while ($r = mysqli_fetch_array($All_PRICES_SQL))
 			array_push($price_array, $r['VALUE']);
@@ -99,17 +110,17 @@
 		}
 	?>	
             <div class="card">
-               <h1 class="card-header"><?php echo $row['TEAM_NAME']. "<br>";  ?></h1>
+               <h1 class="card-header"><?php if (in_array($team_id, $MyTeams)) { echo '<i title="You own some of this team" class="fas fa-star"></i>';} echo $row['TEAM_NAME']. "<br>";  ?></h1>
                <div class="card-img-top" id="<?php echo $row['TEAM_NAME'];  ?>"></div>
                <div class="card-body">
                   <!-- Links -->
-                  <p style="Font-size: 2.6em; display: inline;">$<?php echo $row['CURRENT_PRICE'];  ?></p>
+                  <p style="Font-size: 2.6em; display: inline;">$<?php echo number_format($row['CURRENT_PRICE']);  ?></p>
                   <p style="Font-size: 1.7em; display: inline; float: right; margin-right: 10px; margin-top: 10px;">
-				  <a href="../trade/index.php?team=<?php echo $row['TEAM_ID'];  ?>" class="card-link">Trade</a></p>
+				  <a href="../trade/?team=<?php echo $row['TEAM_ID'];  ?>" class="card-link">Trade</a></p>
                   <p class="hidden values d-none"><?php foreach ($price_array as $value) { echo "$value ";}?></p>
                </div>
                <div class="card-footer">
-                  <div class="text-muted">Seeding: <?php echo $row['TEAM_SEEDING'];  ?> <span style="float: right;">Shares Outstanding: <?php echo $row['SHARES_OUTSTANDING']. "<br>";  ?></span></div>
+                  <div class="text-muted">Seeding: <?php echo $row['TEAM_SEEDING'];  ?> <span style="float: right;">Shares Outstanding: <?php if(isset($row['SHARES_OUTSTANDING'])) echo $row['SHARES_OUTSTANDING']; else echo '0';  ?></span></div>
                   <!--PRINT OUT STATUS AND SHARES OUTSTANDING -->
                </div>
             </div>		

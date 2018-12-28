@@ -142,3 +142,137 @@
 [22-Dec-2018 04:42:19 UTC] PHP Parse error:  syntax error, unexpected '32' (T_LNUMBER), expecting ',' or ';' in /home/pju37s1wsyzx/public_html/market/index.php on line 163
 [22-Dec-2018 04:42:21 UTC] PHP Parse error:  syntax error, unexpected '32' (T_LNUMBER), expecting ',' or ';' in /home/pju37s1wsyzx/public_html/market/index.php on line 163
 [22-Dec-2018 15:24:54 UTC] PHP Parse error:  syntax error, unexpected 'require' (T_REQUIRE) in /home/pju37s1wsyzx/public_html/market/index.php on line 3
+[23-Dec-2018 15:39:07 UTC] PHP Notice:  Undefined index: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/market/index.php on line 112
+[23-Dec-2018 15:39:07 UTC] PHP Notice:  Undefined index: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/market/index.php on line 112
+[23-Dec-2018 15:39:07 UTC] PHP Notice:  Undefined index: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/market/index.php on line 112
+[23-Dec-2018 15:39:07 UTC] PHP Notice:  Undefined index: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/market/index.php on line 112
+[23-Dec-2018 15:39:07 UTC] PHP Notice:  Undefined index: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/market/index.php on line 112
+[23-Dec-2018 15:39:07 UTC] PHP Notice:  Undefined index: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/market/index.php on line 112
+[23-Dec-2018 15:39:07 UTC] PHP Notice:  Undefined index: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/market/index.php on line 112
+[23-Dec-2018 15:39:07 UTC] PHP Notice:  Undefined index: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/market/index.php on line 112
+[23-Dec-2018 15:41:24 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:45:19 UTC] PHP Notice:  Undefined variable: conn in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:45:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pju37s1wsyzx/public_html/market/index.php:8
+Stack trace:
+#0 /home/pju37s1wsyzx/public_html/market/index.php(121): getSharesOutstanding('1')
+#1 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:45:29 UTC] PHP Notice:  Undefined variable: conn in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:45:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pju37s1wsyzx/public_html/market/index.php:8
+Stack trace:
+#0 /home/pju37s1wsyzx/public_html/market/index.php(121): getSharesOutstanding('1')
+#1 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:45:31 UTC] PHP Notice:  Undefined variable: conn in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:45:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pju37s1wsyzx/public_html/market/index.php:8
+Stack trace:
+#0 /home/pju37s1wsyzx/public_html/market/index.php(121): getSharesOutstanding('1')
+#1 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:46:20 UTC] PHP Notice:  Undefined variable: conn in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:46:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pju37s1wsyzx/public_html/market/index.php:8
+Stack trace:
+#0 /home/pju37s1wsyzx/public_html/market/index.php(122): getSharesOutstanding('1')
+#1 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:46:38 UTC] PHP Notice:  Undefined variable: conn in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:46:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pju37s1wsyzx/public_html/market/index.php:8
+Stack trace:
+#0 /home/pju37s1wsyzx/public_html/market/index.php(123): getSharesOutstanding('1')
+#1 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:46:40 UTC] PHP Notice:  Undefined variable: conn in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:46:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pju37s1wsyzx/public_html/market/index.php:8
+Stack trace:
+#0 /home/pju37s1wsyzx/public_html/market/index.php(123): getSharesOutstanding('1')
+#1 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/index.php on line 8
+[23-Dec-2018 15:47:18 UTC] PHP Notice:  Undefined variable: conn in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[23-Dec-2018 15:47:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pju37s1wsyzx/public_html/market/index.php:10
+Stack trace:
+#0 /home/pju37s1wsyzx/public_html/market/index.php(125): getSharesOutstanding('1')
+#1 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[23-Dec-2018 15:47:38 UTC] PHP Notice:  Undefined variable: conn in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[23-Dec-2018 15:47:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pju37s1wsyzx/public_html/market/index.php:10
+Stack trace:
+#0 /home/pju37s1wsyzx/public_html/market/index.php(121): getSharesOutstanding('1')
+#1 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[23-Dec-2018 15:47:42 UTC] PHP Notice:  Undefined variable: x in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[23-Dec-2018 15:47:42 UTC] PHP Notice:  Undefined variable: x in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[23-Dec-2018 15:47:42 UTC] PHP Notice:  Undefined variable: x in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[23-Dec-2018 15:47:42 UTC] PHP Notice:  Undefined variable: x in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[23-Dec-2018 15:47:42 UTC] PHP Notice:  Undefined variable: x in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[23-Dec-2018 15:47:42 UTC] PHP Notice:  Undefined variable: x in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[23-Dec-2018 15:47:42 UTC] PHP Notice:  Undefined variable: x in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[23-Dec-2018 15:47:42 UTC] PHP Notice:  Undefined variable: x in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[23-Dec-2018 15:49:21 UTC] PHP Notice:  Undefined variable: conn in /home/pju37s1wsyzx/public_html/market/Php_Scripts/set_current_week.php on line 9
+[23-Dec-2018 15:49:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pju37s1wsyzx/public_html/market/Php_Scripts/set_current_week.php:9
+Stack trace:
+#0 /home/pju37s1wsyzx/public_html/market/index.php(113): getSharesOutstanding('1')
+#1 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/Php_Scripts/set_current_week.php on line 9
+[26-Dec-2018 19:10:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function numberFormat() in /home/pju37s1wsyzx/public_html/market/index.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/pju37s1wsyzx/public_html/market/index.php on line 43
+[27-Dec-2018 00:33:36 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/pju37s1wsyzx/public_html/market/index.php on line 9
+[27-Dec-2018 00:33:44 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 9
+[27-Dec-2018 00:33:44 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 9
+[27-Dec-2018 00:33:44 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 9
+[27-Dec-2018 00:33:44 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 9
+[27-Dec-2018 00:33:44 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 9
+[27-Dec-2018 00:33:44 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 9
+[27-Dec-2018 00:33:44 UTC] PHP Notice:  Undefined index: TEAM_ID in /home/pju37s1wsyzx/public_html/market/index.php on line 13
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:16 UTC] PHP Notice:  Undefined index: TEAM_ID in /home/pju37s1wsyzx/public_html/market/index.php on line 18
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:34:39 UTC] PHP Notice:  Undefined index: TEAM_ID in /home/pju37s1wsyzx/public_html/market/index.php on line 18
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 10
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: USER_CASH in /home/pju37s1wsyzx/public_html/market/index.php on line 11
+[27-Dec-2018 00:35:26 UTC] PHP Notice:  Undefined index: TEAM_ID in /home/pju37s1wsyzx/public_html/market/index.php on line 18
+[27-Dec-2018 00:42:08 UTC] PHP Warning:  require(Php_Scripts/getTeamsUserOwns.php.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/market/index.php on line 6
+[27-Dec-2018 00:42:08 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/getTeamsUserOwns.php.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/market/index.php on line 6
+[27-Dec-2018 00:42:38 UTC] PHP Warning:  require(Php_Scripts/getTeamsUserOwns.php.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/market/index.php on line 6
+[27-Dec-2018 00:42:38 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/getTeamsUserOwns.php.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/market/index.php on line 6
+[27-Dec-2018 01:04:58 UTC] PHP Notice:  Undefined index: isHideCharts  in /home/pju37s1wsyzx/public_html/market/Php_Scripts/loginManager.php on line 31
+[27-Dec-2018 01:05:07 UTC] PHP Notice:  Undefined index: isHideCharts  in /home/pju37s1wsyzx/public_html/market/Php_Scripts/loginManager.php on line 31

@@ -1,0 +1,70 @@
+[27-Dec-2018 18:15:00 UTC] PHP Warning:  require(Php_Scripts/loginManager.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 22
+[27-Dec-2018 18:15:00 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/loginManager.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 22
+[27-Dec-2018 21:21:09 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 8
+[27-Dec-2018 21:21:09 UTC] PHP Notice:  Undefined variable: name in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 71
+[27-Dec-2018 21:21:09 UTC] PHP Notice:  Undefined variable: isLocked in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 80
+[27-Dec-2018 21:21:09 UTC] PHP Notice:  Undefined variable: isOut in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 89
+[27-Dec-2018 21:21:14 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 8
+[27-Dec-2018 21:21:14 UTC] PHP Notice:  Undefined variable: name in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 71
+[27-Dec-2018 21:21:14 UTC] PHP Notice:  Undefined variable: isLocked in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 80
+[27-Dec-2018 21:21:14 UTC] PHP Notice:  Undefined variable: isOut in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 89
+[27-Dec-2018 21:21:30 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 8
+[27-Dec-2018 21:21:31 UTC] PHP Notice:  Undefined variable: name in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 71
+[27-Dec-2018 21:21:31 UTC] PHP Notice:  Undefined variable: isLocked in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 80
+[27-Dec-2018 21:21:31 UTC] PHP Notice:  Undefined variable: isOut in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 89
+[27-Dec-2018 21:21:33 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 8
+[27-Dec-2018 21:21:33 UTC] PHP Notice:  Undefined variable: name in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 71
+[27-Dec-2018 21:21:33 UTC] PHP Notice:  Undefined variable: isLocked in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 80
+[27-Dec-2018 21:21:33 UTC] PHP Notice:  Undefined variable: isOut in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 89
+[27-Dec-2018 21:21:51 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 8
+[27-Dec-2018 21:21:51 UTC] PHP Notice:  Undefined variable: name in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 71
+[27-Dec-2018 21:21:51 UTC] PHP Notice:  Undefined variable: isLocked in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 80
+[27-Dec-2018 21:21:51 UTC] PHP Notice:  Undefined variable: isOut in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 89
+[27-Dec-2018 21:21:53 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 8
+[27-Dec-2018 21:21:53 UTC] PHP Notice:  Undefined variable: name in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 71
+[27-Dec-2018 21:21:53 UTC] PHP Notice:  Undefined variable: isLocked in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 80
+[27-Dec-2018 21:21:53 UTC] PHP Notice:  Undefined variable: isOut in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 89
+[27-Dec-2018 21:21:55 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 8
+[27-Dec-2018 21:21:55 UTC] PHP Notice:  Undefined variable: name in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 71
+[27-Dec-2018 21:21:55 UTC] PHP Notice:  Undefined variable: isLocked in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 80
+[27-Dec-2018 21:21:55 UTC] PHP Notice:  Undefined variable: isOut in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 89
+[27-Dec-2018 21:22:00 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 8
+[27-Dec-2018 21:22:02 UTC] PHP Notice:  Undefined variable: name in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 71
+[27-Dec-2018 21:22:02 UTC] PHP Notice:  Undefined variable: isLocked in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 80
+[27-Dec-2018 21:22:02 UTC] PHP Notice:  Undefined variable: isOut in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 89
+[27-Dec-2018 23:15:57 UTC] PHP Notice:  Undefined variable: cr in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 6
+[27-Dec-2018 23:16:15 UTC] PHP Notice:  Undefined variable: cr in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 6
+[27-Dec-2018 23:16:24 UTC] PHP Warning:  require(../../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 3
+[27-Dec-2018 23:16:24 UTC] PHP Fatal error:  require(): Failed opening required '../../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 3
+[27-Dec-2018 23:18:34 UTC] PHP Warning:  require(../Php_Scripts/getRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 3
+[27-Dec-2018 23:18:34 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 3
+[27-Dec-2018 23:18:48 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getRound.php on line 2
+[27-Dec-2018 23:18:48 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/getRound.php on line 2
+[27-Dec-2018 23:19:32 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:19:32 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:02 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:02 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:10 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:10 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:15 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:15 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:24 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:24 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:32 UTC] PHP Warning:  require(../Php_Scripts/getRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 3
+[27-Dec-2018 23:20:32 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/updateValue.php on line 3
+[27-Dec-2018 23:20:41 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:41 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:54 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:20:54 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:21:05 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:21:05 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:21:44 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:21:44 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:22:20 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:22:20 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:23:28 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:23:28 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:23:43 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:23:43 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:23:49 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[27-Dec-2018 23:23:49 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3

@@ -1,0 +1,165 @@
+[26-Dec-2018 20:33:52 UTC] PHP Notice:  Undefined variable: ID in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 11
+[26-Dec-2018 20:34:22 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 2
+[26-Dec-2018 20:34:22 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 2
+[26-Dec-2018 20:34:56 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 2
+[26-Dec-2018 20:34:56 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 2
+[26-Dec-2018 20:35:12 UTC] PHP Warning:  require(db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 2
+[26-Dec-2018 20:35:12 UTC] PHP Fatal error:  require(): Failed opening required 'db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 2
+[26-Dec-2018 20:35:31 UTC] PHP Warning:  require(../Php_Scripts/db_connect.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 2
+[26-Dec-2018 20:35:31 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/db_connect.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 2
+[26-Dec-2018 20:35:48 UTC] PHP Notice:  Undefined variable: ID in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 13
+[26-Dec-2018 20:42:07 UTC] PHP Notice:  Undefined index: Team_Price  in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 25
+[26-Dec-2018 20:42:38 UTC] PHP Notice:  Undefined index: Team_Price  in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 29
+[26-Dec-2018 20:42:58 UTC] PHP Notice:  Undefined index: Team_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 29
+[26-Dec-2018 20:45:26 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 20:45:31 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 20:45:37 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 20:58:36 UTC] PHP Notice:  Undefined variable: Game in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 51
+[26-Dec-2018 20:58:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 51
+[26-Dec-2018 20:58:49 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 47
+[26-Dec-2018 20:58:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 47
+[26-Dec-2018 20:59:20 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 47
+[26-Dec-2018 20:59:30 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 47
+[26-Dec-2018 21:00:15 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 47
+[26-Dec-2018 21:00:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 50
+[26-Dec-2018 21:01:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 50
+[26-Dec-2018 21:01:39 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 50
+[26-Dec-2018 21:04:23 UTC] PHP Warning:  Use of undefined constant UPDATE_OWNS_TABLE - assumed 'UPDATE_OWNS_TABLE' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 50
+[26-Dec-2018 21:05:39 UTC] PHP Warning:  Use of undefined constant UPDATE_OWNS_TABLE - assumed 'UPDATE_OWNS_TABLE' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 50
+[26-Dec-2018 21:05:41 UTC] PHP Warning:  Use of undefined constant UPDATE_OWNS_TABLE - assumed 'UPDATE_OWNS_TABLE' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 50
+[26-Dec-2018 21:05:45 UTC] PHP Warning:  Use of undefined constant UPDATE_OWNS_TABLE - assumed 'UPDATE_OWNS_TABLE' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 50
+[26-Dec-2018 21:06:04 UTC] PHP Warning:  Use of undefined constant UPDATE_OWNS_TABLE - assumed 'UPDATE_OWNS_TABLE' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 50
+[26-Dec-2018 21:06:27 UTC] PHP Warning:  Use of undefined constant UPDATE_OWNS_TABLE - assumed 'UPDATE_OWNS_TABLE' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 53
+[26-Dec-2018 21:17:30 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 21:25:23 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 21:25:26 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 21:25:26 UTC] PHP Notice:  Undefined variable: PRICE in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 23
+[26-Dec-2018 21:25:26 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 43
+[26-Dec-2018 21:26:05 UTC] PHP Notice:  Undefined variable: OKAY_TO_BUY in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 36
+[26-Dec-2018 21:35:40 UTC] PHP Warning:  Use of undefined constant Amount_to_sell - assumed 'Amount_to_sell' (this will throw an Error in a future version of PHP) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 17
+[26-Dec-2018 21:35:50 UTC] PHP Notice:  Undefined variable: Amount_to_sell in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 17
+[26-Dec-2018 21:36:47 UTC] PHP Notice:  Undefined index: sell_amount in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 17
+[26-Dec-2018 21:37:42 UTC] PHP Notice:  Undefined variable: Amount_to_sell in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 17
+[26-Dec-2018 21:40:56 UTC] PHP Notice:  Undefined index: AMOUNT_OWNED  in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 18
+[26-Dec-2018 21:40:59 UTC] PHP Notice:  Undefined index: AMOUNT_OWNED  in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 18
+[26-Dec-2018 21:46:44 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 37
+[26-Dec-2018 21:47:08 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 37
+[26-Dec-2018 21:47:39 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 37
+[26-Dec-2018 21:48:09 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 37
+[26-Dec-2018 21:50:25 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 37
+[26-Dec-2018 21:51:08 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 37
+[26-Dec-2018 21:51:42 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 37
+[26-Dec-2018 21:52:24 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 37
+[26-Dec-2018 21:53:23 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 36
+[26-Dec-2018 21:54:15 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 40
+[26-Dec-2018 21:54:20 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 40
+[26-Dec-2018 21:55:27 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 21:55:31 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 21:55:51 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 21:55:54 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 21:58:25 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 21:58:25 UTC] PHP Notice:  Undefined variable: PRICE in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 23
+[26-Dec-2018 21:58:25 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 43
+[26-Dec-2018 21:58:56 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 21:59:01 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 21:59:36 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 21:59:50 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 22:02:11 UTC] PHP Notice:  Undefined variable: Amount_Ownded in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 21
+[26-Dec-2018 22:02:56 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:03:59 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:04:02 UTC] PHP Notice:  Undefined variable: Amount_Ownded in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 21
+[26-Dec-2018 22:04:02 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 22:08:41 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:08:57 UTC] PHP Notice:  Undefined variable: Amount_Ownded in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 21
+[26-Dec-2018 22:08:57 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 22:11:14 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:11:14 UTC] PHP Notice:  Undefined variable: PRICE in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 23
+[26-Dec-2018 22:11:14 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 43
+[26-Dec-2018 22:11:23 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:11:27 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 22:11:35 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:11:35 UTC] PHP Notice:  Undefined variable: PRICE in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 23
+[26-Dec-2018 22:11:35 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 43
+[26-Dec-2018 22:12:19 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:12:29 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 22:13:16 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:13:16 UTC] PHP Notice:  Undefined variable: PRICE in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 23
+[26-Dec-2018 22:13:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 43
+[26-Dec-2018 22:13:29 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:14:22 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 22:14:34 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:14:57 UTC] PHP Notice:  Undefined variable: Current_Price in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/sell.php on line 33
+[26-Dec-2018 22:15:09 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:15:17 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[26-Dec-2018 22:44:49 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 00:13:09 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 00:15:25 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 00:15:32 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 00:15:46 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 00:15:51 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 00:55:32 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 00:56:40 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 00:56:54 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:18:23 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:32:56 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:38:48 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:38:53 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:38:57 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:39:01 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:39:21 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:39:28 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:40:48 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:40:52 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:40:57 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:41:31 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:41:53 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:43:06 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:43:17 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:43:24 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:43:33 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:43:47 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:43:56 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:44:04 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:44:07 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:44:11 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:44:19 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:44:29 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:44:37 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:44:59 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:45:37 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:45:41 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:46:04 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:47:23 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:47:44 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 01:47:48 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 02:38:15 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 02:38:50 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 02:39:45 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 02:39:58 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 13:51:26 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 17:52:20 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 17:52:37 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 19:09:51 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 19:10:14 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 19:10:20 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 19:14:20 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 19:16:06 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 19:16:17 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 19:16:21 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 19:16:29 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 19:16:36 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:17:04 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:24:18 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:24:23 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:27:13 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:29:47 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:31:00 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:31:21 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:32:08 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:32:15 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 21:32:56 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[27-Dec-2018 23:10:07 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[28-Dec-2018 00:19:29 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[28-Dec-2018 00:19:36 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[28-Dec-2018 00:19:42 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
+[28-Dec-2018 00:29:46 UTC] PHP Notice:  Undefined index: isFee in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/buy.php on line 7
