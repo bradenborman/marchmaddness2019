@@ -7,10 +7,15 @@ body {
  margin-top: 35px;
 }
 	
- #links a {
-	  float: right;
-	  display: inline;
-  }
+ .links {
+ 	margin-top: 20px;
+	text-align: right;
+}
+
+ .links a {
+ 	margin-left: 15px;
+	
+}
 
 
 .fa-trophy {

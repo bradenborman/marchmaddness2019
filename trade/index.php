@@ -17,7 +17,7 @@
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	  <link rel="stylesheet" type="text/css" href="css/style.css">
 	  	<link href='https://fonts.googleapis.com/css?family=Alfa Slab One' rel='stylesheet'>
-   <script src="scripts/general.js"></script>
+   <script src="scripts/general.js"></script>  
    </head>
    <body onload="determineSliderValues()">
      
@@ -59,8 +59,13 @@
                         <input onchange="updateBuyBTN(this.value)" class="slider" type="range" min="0" max="100" value="0" class="slider" id="buySlider" name="buy_amount">
                         <input style="display: none;" type="checkbox" name="isFee" id="isFee" <?php if($SHARES_OUTSTANDING >= $Apply_Fee_At) echo 'Checked'; ?> onChange="determineSliderValues()">
                         <input style="display: none;" type="text" name="teamId" value="<?php echo $TEAM_ID; ?>">
-						<br />
-                        <button id="buyBTN" type="submit" class="buy btn btn-success">Buy</button>
+			<br />
+			
+			<?php if(!$ISTEAMLOCKED) 
+                        	echo '<button id="buyBTN" type="submit" class="buy btn btn-success tradeBTN">Buy</button>'; 
+                        else
+                        	echo '<button id="buyBTN" type="submit" disabled class="buy btn btn-success tradeBTN"><i class="fa fa-lock" aria-hidden="true"></i> Buy</button>'; ?>
+
                      </form>
                   </div>
                   <div id="SELL_SECTION" class="col-md-6 text-center">
@@ -68,16 +73,187 @@
                         <input onchange="updateSellBTN(this.value)" class="slider" type="range" min="0" max="<?php if(isset($Shares_Already_Owned)) echo $Shares_Already_Owned; else echo '0'; ?>" value="0" class="slider" id="sellSlider" name="sell">						
                         <input style="display: none;" type="text" name="teamId" value="<?php echo $TEAM_ID; ?>">
                         <br />
-                        <button id="sellBTN" type="submit" class="sell btn btn-success">Sell</button>
+                        
+                        <?php if(!$ISTEAMLOCKED) 
+                        	echo '<button id="sellBTN" type="submit" class="sell btn btn-success tradeBTN">Sell</button>'; 
+                        else
+                        	echo '<button id="sellBTN" disabled type="submit" class="sell btn btn-success tradeBTN"><i class="fa fa-lock" aria-hidden="true"></i> Sell</button>'; ?>
+                        
+                        
                      </form>
                   </div>
                </div>
             </div>
          </div>
-      </div>
+         <div id="TEAM_INFO" class="card">
+         	
+         	<div class="row">
+         		<h2><?php echo $TEAM_NAME ; ?> Breakdown</h2>       
+         	</div>
+	         <div class="row">
+		        <div class="col-lg-4">
+			        <div id="stats"></div>
+			</div>       
+		        <div class="col-lg-8">
+			        
+				         <div id="rosterArea">
+						<table class="table" id="tableRoster">
+						  <tbody>
+						  <th>Player</th>
+						  <th>PPG</th>
+						  <th>Efficiency Rating</th>
+						  </tbody>
+						</table>
+				         </div>
+			</div>
+		</div>
+	</div>
+
+</div>
+      
+      
+      
+
+
+<script type="text/javascript">
+  
+    var teamName = "<?php echo $TEAM_NAME ; ?>"
+       
+    $(function() {
+    
+    	 var x = ""
+    	 var wins = 0
+    	 var losses = 0
+    	 var ConferenceLosses = 0
+    	 var ConferenceWins = 0
+    	 
+        var params = {
+            // Request parameters
+        };
+      
+        $.ajax({
+            url: "https://api.fantasydata.net/v3/cbb/stats/JSON/teams?" + $.param(params),
+            beforeSend: function(xhrObj){
+                // Request headers
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","04a1aa44805543669cf168b15f156581");
+            },
+            type: "GET",
+            // Request body
+            data: "{body}",
+        })
+        .done(function(data) {
+             //console.log(data);
+             	 
+             	 data.forEach(function(element) {
+			  if(element.School == teamName) {
+			  	x = element.Key
+			  	wins = element.Wins
+			  	losses = element.Losses
+			  	ConferenceWins = element.ConferenceWins
+			  	ConferenceLosses = element.ConferenceLosses
+			  }
+		   });
+		   	
+		   	
+		 displaystats(wins, losses, ConferenceWins, ConferenceLosses)  		      
+	   	getRosters(x)
+        })
+        .fail(function() {
+            alert("error");
+        });
+        
+        
+        
+    });
+    
+    
+    function  displaystats(wins, losses, ConferenceWins, ConferenceLosses) {
+    
+    	$('#stats').html("<hr><span class='team_info'>Wins: " + wins + "<br></span><span class='team_info'>Losses: " + losses + "<br></span><span class='team_info'>Conference Wins: " + ConferenceWins + "<br></span><span class='team_info'>Conference Losses: " + ConferenceLosses + "<br></span>")
+    
+    }
+
+
+
+
+    function getRosters(x) {
+    
+     var All_Players = [] 
+    
+    
+	    $(function() {
+	        var params = {
+	            // Request parameters
+	        };
+	      
+	        $.ajax({
+	            url: "https://api.fantasydata.net/v3/cbb/stats/JSON/PlayerSeasonStatsByTeam/2019/" + x + "?" + $.param(params),
+	            beforeSend: function(xhrObj){
+	                // Request headers
+	                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","04a1aa44805543669cf168b15f156581");
+	            },
+	            type: "GET",
+	            // Request body
+	            data: "{body}",
+	        })
+	        .done(function(data) {
+	                   console.log(data);
+	                               
+	           data.forEach(function(element) {	  
+			if(element.Points > 35)
+				All_Players.push(new Person(element.Name, element.Points, element.Games, element.PlayerEfficiencyRating))
+		   });      
+		   
+		     displayRoster(All_Players)
+	        })
+	        .fail(function() {
+	            alert("error");
+	        });
+	    });   
+   }
+   
+   
+
+   
+function Person(name, points, Games, PlayerEfficiencyRating) {
+	  this.name = name;
+	  this.points= points;
+	  this.games = Games;
+	  this.PlayerEfficiencyRating = PlayerEfficiencyRating
+}
+   
+   
+   
+   
+   
+   
+ function displayRoster(TeamArray) {
+   		
+      	for(var x = 0; x < TeamArray.length; x ++) {
+      	$('#tableRoster> tbody:last-child').append(
+            '<tr><td>' + TeamArray[x].name + '</td><td>' + Math.round((TeamArray[x].points / TeamArray[x].games)) + '</td><td>' + isAllStar(TeamArray[x].PlayerEfficiencyRating) + '</td><td></tr>');
+      	}
+      		
+            
+ }
+  
+  
+ function  isAllStar(rating) {
+ 	
+ 	if(rating > 22)
+ 		return "<span class='badge badge-primary'>" + rating + "</span>"
+ 	else
+ 		return rating
+ }
+      		
+            
+
+   
+   
+</script>
+
       <script>
 	  
-	  	  
 		//HARD CODED FOR TESTING set to true
 		var lateToPartyFee = $("#isFee").attr("checked") ? true : false;
 	  
@@ -141,7 +317,7 @@
 			$("#sellBTN").prop("disabled",true);
          	return true
          }
-         				
+         			
       </script>
    </body>
 </html>

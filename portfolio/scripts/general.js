@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	
 	$("#Networth").html("$" + ReplaceNumberWithCommas(networth));
-	$("#Standings").html(standings);
 	$("#Leader").html("$" + ReplaceNumberWithCommas(leader));
 	$("#TotalMoney").html("$" + ReplaceNumberWithCommas(totalMoney));
 	$("#CurrentRound").html(currentRound);

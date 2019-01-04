@@ -5,7 +5,7 @@
 	require 'Php_Scripts/getValueInShare.php'; // gets $Value_in_Shares
 	require 'Php_Scripts/getTotalMoneyInPlay.php'; // gets $GRAND_TOTAL_IN_PLAY	
 	require 'Php_Scripts/getTotalTransactions.php'; // gets $totalTransactions && $MYtotalTransActions
-	
+	require 'Php_Scripts/getFirstPlace.php'; // gets $firstplace
 		
 	$Portfolio_sql = $conn->query("SELECT * FROM `OWNS` JOIN TEAMS ON TEAMS.Team_ID = OWNS.Team_ID WHERE USER_ID = '$ID' and AMOUNT_OWNED > 0");
 	$User_sql = $conn->query("SELECT * FROM `USER` WHERE `USER_ID` = '$ID'");
@@ -33,10 +33,10 @@
 <?php
 while ($r = mysqli_fetch_array($User_sql)){
 	$Net_worth = $r['USER_CASH'] + $Value_in_Shares;
+	$cash = $r['USER_CASH'];
 ?>
 	var networth = '<?php echo $Net_worth; ?>';
-	var standings = "To do"
-	var leader =  "To do"
+	var leader =   '<?php echo $firstplace; ?>';
 	var totalMoney = '<?php echo $GRAND_TOTAL_IN_PLAY; ?>';
 	var currentRound =  '<?php echo $CurrentRound; ?>';
 <?php } ?></script>
@@ -46,9 +46,9 @@ while ($r = mysqli_fetch_array($User_sql)){
 
 <div class="container app">
 		  <div class="row">
-				<div class="col-sm-6 ">
+				<div class="col-lg-6 ">
 						<div class="card">
-							<div class="card-header"><h2><i class="fas fa-folder-open"></i> Snapshot</h2></div>
+							<div class="card-header"><h2><i class="fas fa-folder-open"></i> <?php echo $NAME; ?>'s Snapshot</h2></div>
 							<div class="card-body">
 								<div class="row">
 									<div class="col-lg-12">
@@ -57,7 +57,7 @@ while ($r = mysqli_fetch_array($User_sql)){
 								</div>
 								<div class="row">
 									<div class="col-lg-12">
-										<p><b><h5>My Leaderboard Position: </b><span id="Standings"></span><h5></p>
+										<p><b><h5>Cash: <span style="color: green;">$<?php echo number_format($cash); ?> </span></b><h5></p>
 									</div>
 								</div>	
 								<div class="row">
@@ -69,7 +69,7 @@ while ($r = mysqli_fetch_array($User_sql)){
 							
 						  </div>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-lg-6">
 				  <div class="card text-justify">
 						<div class="card-header"><h2><i class="fas fa-tachometer-alt"></i> Game flow</h2></div>
 						<div class="card-body ">
@@ -100,9 +100,10 @@ while ($r = mysqli_fetch_array($User_sql)){
 		  <div class="row"><!-- FOR EACH TEAM -- PRINT JAVASCRIPT FUNCTION THAT TAKES IN TEAM NAME OR ID CREATE FUNCTION THAT HEADS TO TRADE PAGE WITH TEAM NAME SET-->
 				<div class="col-lg-8">
 						<div class="card">
-						<div class="card-header"><h2><i class="fas fa-money-bill-alt"></i> My Investments</h2> $<?php echo number_format($Value_in_Shares)
-						; ?></div>
-								<div class="table-responsive-sm">
+						<div class="card-header"><h2><i class="fas fa-money-bill-alt"></i> My Investments</h2> $<?php echo number_format($Value_in_Shares); ?>
+						<p class="showSmall">Scroll right to see more</p>
+						</div>
+								<div class="table-responsive-lg">
 								<table class="table table-hover table-striped text-center">
 									  <thead>
 										<tr>
@@ -145,7 +146,7 @@ while ($r = mysqli_fetch_array($User_sql)){
 						</div>
 				</div>
 				<div class="col-lg-4">
-				  <div class="card">
+				  <div class="card optionLinks">
 						<div class="card-header"><h2><i class="fas fa-cog"></i> Options</h2></div>
 						<div class="card-body">
 							<ul class="nav flex-column">
@@ -153,16 +154,16 @@ while ($r = mysqli_fetch_array($User_sql)){
 							  <a class="nav-link" href="../market/">View Market</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link" href="../leaderboard/index.html">View Leaderboard</a>
+							  <a class="nav-link" href="../leaderboard/">View Leaderboard</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link" href="../history/index.html">Transaction History</a>
+							  <a class="nav-link" href="../trade/history">Transaction History</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link" href="../user-update/index.html">User Information</a>
+							  <a class="nav-link" href="../user-update/index.html">My Information</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link" href="../rules/index.html">Extended Rules</a>
+							  <a class="nav-link" href="https://cbbbluechips.com/rules.pdf">Extended Rules</a>
 							</li>
 							<li class="nav-item">
 							  <a class="nav-link" href="Php_Scripts/logout.php">Log-out</a> <!-- To PHP SCRIPT THAT LOGS OUT THEN HEADS TO HOME PAGE -->

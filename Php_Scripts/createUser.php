@@ -20,7 +20,7 @@
 		
 	if (isset($_POST['passwordHint']))
 		$hint = trim($_POST['passwordHint']);
-			
+	$hint = "";		
 			
 	$check_user_sql = "SELECT count(*) FROM `USER` where EMAIL = '".$email."'";	
 

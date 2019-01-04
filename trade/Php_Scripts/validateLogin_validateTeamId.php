@@ -17,6 +17,7 @@
 		$URL = $r['LOGO_URL'];
 		$TEAM_NAME = $r['TEAM_NAME'];
 		$SHARES_OUTSTANDING = $r['SHARES_OUTSTANDING'];
+		$ISTEAMLOCKED = $r['ISTEAMLOCKED'];
 	}
 		
 	if($TEAM_NAME == '')

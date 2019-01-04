@@ -1,4 +1,6 @@
 <?php
+	date_default_timezone_set("America/Chicago");
+	
 	require '../../Php_Scripts/db_connect.php';
 	require 'loginManager.php'; // handles login returns $ID
 		
@@ -12,10 +14,12 @@
 	}	
 					
 	//Gets $total 
-	$Team_sql = "SELECT CURRENT_PRICE FROM `TEAMS` WHERE TEAM_ID = '$Team_ID'";	
+	$Team_sql = "SELECT CURRENT_PRICE, TEAM_NAME FROM `TEAMS` WHERE TEAM_ID = '$Team_ID'";	
 	$Team_Price = $conn->query($Team_sql);	
-	while ($row = mysqli_fetch_array($Team_Price))
+	while ($row = mysqli_fetch_array($Team_Price)) {
 			$PRICE = $row['CURRENT_PRICE'];
+			$TEAM_NAME = $row['TEAM_NAME'];
+	}
 	
 	if($isFee)
 		$total =  ($PRICE * $Amount_to_buy) + $PRICE;
@@ -25,8 +29,11 @@
 	//Gets $Cash_open
 	$User_sql = "SELECT * FROM `USER` WHERE USER_ID = '$ID'";	
 	$Cash = $conn->query($User_sql);	
-	while ($row = mysqli_fetch_array($Cash))
+	while ($row = mysqli_fetch_array($Cash)) {
 			$Cash_open = $row['USER_CASH'];
+			$Fname = $row['FIRST_NAME'];
+			$Lname = $row['LAST_NAME'];
+	}
 		
 	if($Cash_open >= $total)
 		$OKAY_TO_BUY = true;
@@ -69,11 +76,35 @@
 					if (!mysqli_query($conn, $sql_update_USER))
 			  			echo("Error description: " . mysqli_error($conn));
 			  		else
+			  		{
+			  			addToHistory($ID, $Fname, $Lname, $TEAM_NAME, $Amount_to_buy, $total);
 			  			header('Location: https://cbbbluechips.com/portfolio/');
 						exit();	
+					}
 		}else {
 			header('Location: https://cbbbluechips.com/portfolio/');
 			exit();	
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+	function addToHistory($ID, $Fname, $Lname, $TEAM_NAME, $Amount_to_buy, $total) {
+		
+		$TEAM_NAME = str_replace(' ', '_', $TEAM_NAME);
+		
+		$file = '../history/transactions.txt';
+		$current = file_get_contents($file);
+		$current .= $ID." ".$Fname." ".$Lname." Buy ".$TEAM_NAME." ".$Amount_to_buy." ".$total." ".date("m-d-y h:i:sa")."\n";
+		file_put_contents($file, $current);
+	}	
+		
+		
+		
+		
 		
 ?>

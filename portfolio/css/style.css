@@ -1,3 +1,7 @@
+body {
+	    background-color: rgba(0,0,0,.07);
+  }
+
 .card h3, .card h2 {
 	font-size: 1.3em;
 }
@@ -24,6 +28,7 @@
 	margin-bottom: 20px;
 	font-size: 1.2em;
 	min-height: 280px;
+	border: 1px solid black;
 }
 
 .card-footer {
@@ -46,6 +51,11 @@
 td:nth-child(1) {  
   text-align: left;
 }
+
+.optionLinks {
+	text-align: center;
+}
+
 
 
  @import url('https://fonts.googleapis.com/css?family=Ubuntu');
@@ -70,6 +80,9 @@ td:nth-child(1) {
 ^^ HEADERS 
 */
 
+.showSmall {
+	display: none;
+}
 
 @media (max-width: 575.98px) { 
 	
@@ -85,6 +98,23 @@ td:nth-child(1) {
 	}
 	.card-body h3, .card-body h5 {
 		font-size: 1.2em;
+	}
+
+	
+	.optionLinks {
+	text-align: center;
+	font-size: 1.5em;
+}
+	
+	
+	.logo {
+	height: 10vh;
+	width: 10vh;
+	display: inline;
+}
+
+	.showSmall {
+		display: block;
 	}
 
 	

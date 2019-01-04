@@ -29,7 +29,7 @@
 	  <!--<a href="market/">View Market</a>-->
       <div class="container app">
          <div class="row">
-            <div class="col-md-6">
+            <div class="col-lg-6">
                <nav>
                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
                      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-user-plus"></i> Sign Up</a>
@@ -44,34 +44,36 @@
                            <div class="col-md-12">
                               <div class="form-group">
                                  <input type="text"  name="fname" id="fname" class="form-control" required>
-                                 <label class="form-control-placeholder" for="name">First Name</label>
+                                 <label class="form-control-placeholder floatingLbl" id="fnameLBL" for="name">First Name</label>
                               </div>
                            </div>
                            <div class="col-md-12">
                               <div class="form-group">
                                  <input type="text"  name="lname" id="lname" class="form-control" required>
-                                 <label class="form-control-placeholder" for="name">Last Name</label>
+                                 <label class="form-control-placeholder floatingLbl" id="lnameLBL" for="name">Last Name</label>
                               </div>
                            </div>
                            <div class="col-md-12">
                               <div class="form-group">
                                  <input type="text"  name="email_new" id="email_new" class="form-control" required>
-                                 <label class="form-control-placeholder" for="name">Email</label>
+                                 <label class="form-control-placeholder floatingLbl" id="email_newLBL" for="name">Email</label>
                               </div>
                            </div>
                            <div class="col-md-12">
                               <div class="form-group">
                                  <input type="password"  name="password_new" id="password_new" class="form-control" required>
-                                 <label class="form-control-placeholder" for="name">Password</label>
+                                 <label class="form-control-placeholder floatingLbl" id="password_newLBL" for="name">Password</label>
                               </div>
                            </div>
+                           <!--
                            <div class="col-md-12">
                               <div class="form-group">
                                  <input type="text" name="passwordHint" id="passwordHint" class="form-control" required>
                                  <label class="form-control-placeholder" for="name">Password Hint</label>
                               </div>
                            </div>
-                           <div class="col-md-3">
+                           -->
+                           <div class="col-lg-4">
                               <button type="submit" class="btn btn-primary btn-block form-control-lg">Submit</button>
                            </div>
                         </div>
@@ -84,17 +86,20 @@
                            <div class="col-md-12">
                               <div class="form-group">
                                  <input type="text"  name="email" id="email" class="form-control" required>
-                                 <label class="form-control-placeholder" for="name">Email</label>
+                                 <label class="form-control-placeholder floatingLbl" id="emailLBL" for="name">Email</label>
                               </div>
                            </div>
                            <div class="col-md-12">
                               <div class="form-group">
                                  <input type="password"  name="password" id="password" class="form-control" required>
-                                 <label class="form-control-placeholder" for="name">Password</label>
+                                 <label class="form-control-placeholder floatingLbl" id="passwordLBL" for="name">Password</label>
                               </div>
                            </div>
                            <div class="col-md-4">
                               <button type="submit" class="btn btn-primary btn-block form-control-lg">Submit</button>
+                           </div>
+                            <div style="margin-top: 20px; text-align: center;" class="col-md-12">
+                              <span onClick="forgotPassword()" id="recoverPassword">Enter valid Email for password recovery</span>
                            </div>
                            <br><br>		
                         </div>
@@ -105,7 +110,10 @@
                </div>
             </div>
             <!-- END LEFT -->
-            <div class="col-md-6">
+            
+           <div class="my-hr"></div>
+            
+            <div class="col-lg-6">
                <div class="how2Play">
                   <div class="card">
                      <div class="card-header">
@@ -136,7 +144,7 @@
                            <li>Trading teams is only opened before the start of their respected game for the current round.</li>
                         </ul>
                         </p>
-						 <h6 class="card-title">Further detailed Rules: Click me</h6>
+						 <h6 class="card-title">Further detailed Rules: <a href="https://cbbbluechips.com/rules.pdf">Click me</a></h6>
                      </div>
                   </div>
                </div>

@@ -276,3 +276,19 @@ Stack trace:
 [27-Dec-2018 00:42:38 UTC] PHP Fatal error:  require(): Failed opening required 'Php_Scripts/getTeamsUserOwns.php.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/market/index.php on line 6
 [27-Dec-2018 01:04:58 UTC] PHP Notice:  Undefined index: isHideCharts  in /home/pju37s1wsyzx/public_html/market/Php_Scripts/loginManager.php on line 31
 [27-Dec-2018 01:05:07 UTC] PHP Notice:  Undefined index: isHideCharts  in /home/pju37s1wsyzx/public_html/market/Php_Scripts/loginManager.php on line 31
+[28-Dec-2018 02:31:09 UTC] PHP Parse error:  syntax error, unexpected 'TEAM_ID' (T_STRING), expecting ',' or ';' in /home/pju37s1wsyzx/public_html/market/index.php on line 124
+[28-Dec-2018 02:31:17 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/pju37s1wsyzx/public_html/market/index.php on line 128
+[28-Dec-2018 02:32:54 UTC] PHP Parse error:  syntax error, unexpected '';' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/pju37s1wsyzx/public_html/market/index.php on line 130
+[28-Dec-2018 02:33:07 UTC] PHP Parse error:  syntax error, unexpected '';' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/pju37s1wsyzx/public_html/market/index.php on line 130
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113
+[31-Dec-2018 01:05:22 UTC] PHP Warning:  number_format() expects parameter 1 to be float, string given in /home/pju37s1wsyzx/public_html/market/index.php on line 113

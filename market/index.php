@@ -4,7 +4,7 @@
 	require 'Php_Scripts/set_current_week.php'; // Sets $Current_round; 	
 	require 'Php_Scripts/loginManager.php'; // Sets $ID
 	require 'Php_Scripts/getTeamsUserOwns.php'; // $MyTeams array
-	$All_Teams = $conn->query("SELECT *, (SELECT SUM(AMOUNT_OWNED) FROM `OWNS` WHERE OWNS.TEAM_ID = TEAMS.TEAM_ID) as SHARES_OUTSTANDING FROM TEAMS ORDER BY TEAM_SEEDING");	
+	$All_Teams = $conn->query("SELECT *, (SELECT SUM(AMOUNT_OWNED) FROM `OWNS` WHERE OWNS.TEAM_ID = TEAMS.TEAM_ID) as SHARES_OUTSTANDING FROM TEAMS ORDER BY TEAM_IS_KNOCKED_OUT, TEAM_SEEDING");	
 	$CASH_SQL = $conn->query("SELECT USER_CASH FROM `USER` WHERE USER_ID = '$ID'");	
 	while ($r = mysqli_fetch_array($CASH_SQL)) {
 		 $CASH_TO_SPEND = $r['USER_CASH'];
@@ -57,7 +57,7 @@
 			
 <div id="Search">
 		<div class="row">
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 hideMobile">
 					
 					<div class="input-group mb-3">
 						<input type="text" class="form-control" placeholder="Quick Find" aria-label="Recipient's username" aria-describedby="basic-addon2" id="searchINPUT" list="allTeams">
@@ -110,13 +110,25 @@
 		}
 	?>	
             <div class="card">
-               <h1 class="card-header"><?php if (in_array($team_id, $MyTeams)) { echo '<i title="You own some of this team" class="fas fa-star"></i>';} echo $row['TEAM_NAME']. "<br>";  ?></h1>
+            <img <?php if($row['TEAM_IS_KNOCKED_OUT']) echo 'class="isOut"';  ?> style="margin: auto" width="100px" height="100px" src="<?php echo $row['LOGO_URL']; ?>" alt="Logo">
+            
+            
+            
+            
+               <h1 class="card-header"><?php if (in_array($team_id, $MyTeams)) { echo '<i style="font-size: .8em;" title="You own some of this team" class="fas fa-star"></i>';} echo $row['TEAM_NAME']. "<br>";  ?></h1>
                <div class="card-img-top" id="<?php echo $row['TEAM_NAME'];  ?>"></div>
                <div class="card-body">
                   <!-- Links -->
                   <p style="Font-size: 2.6em; display: inline;">$<?php echo number_format($row['CURRENT_PRICE']);  ?></p>
                   <p style="Font-size: 1.7em; display: inline; float: right; margin-right: 10px; margin-top: 10px;">
-				  <a href="../trade/?team=<?php echo $row['TEAM_ID'];  ?>" class="card-link">Trade</a></p>
+				  <a href="../trade/?team=<?php echo $row['TEAM_ID'];  ?>" class="card-link">
+				  
+				  <?php if(!$row['ISTEAMLOCKED'])
+				   	echo 'Trade</a></p>';
+				  else
+				  	echo '</a><i class="fa fa-lock" aria-hidden="true"></i></p>';
+				  ?>
+				  
                   <p class="hidden values d-none"><?php foreach ($price_array as $value) { echo "$value ";}?></p>
                </div>
                <div class="card-footer">
@@ -156,12 +168,12 @@ google.charts.load('current', {'packages':['corechart']});
 	 var data = google.visualization.arrayToDataTable([
 	 ['Round', 'Value'],
 	 ['64',  parseInt(valueArray[0])],
-	<?php if($Current_round <= 32) echo "['32',  parseInt(valueArray[1])],"; ?>
-	<?php if($Current_round <= 16) echo "['16',  parseInt(valueArray[2])],"; ?>
-	<?php if($Current_round <= 8) echo "['8',  parseInt(valueArray[3])],"; ?>
-	<?php if($Current_round <= 4) echo "['4',  parseInt(valueArray[4])],"; ?>
-	<?php if($Current_round <= 2) echo "['2',  parseInt(valueArray[5])],"; ?>
-	<?php if($Current_round <= 1) echo "['1',  parseInt(valueArray[6])]"; ?>
+	<?php if($Current_round <= 64) echo "['32',  parseInt(valueArray[1])],"; ?>
+	<?php if($Current_round <= 32) echo "['16',  parseInt(valueArray[2])],"; ?>
+	<?php if($Current_round <= 16) echo "['8',  parseInt(valueArray[3])],"; ?>
+	<?php if($Current_round <= 8) echo "['4',  parseInt(valueArray[4])],"; ?>
+	<?php if($Current_round <= 4) echo "['2',  parseInt(valueArray[5])],"; ?>
+	<?php if($Current_round <= 2) echo "['1',  parseInt(valueArray[6])]"; ?>
 	 ]);
 	 
 	 var options = {
@@ -197,7 +209,7 @@ function addBorder() {
 
 function removeBorder()  {
 	$("#Info").css("border-bottom", "6px solid rgba(0, 0, 0, 0)");
-}
+	}
 
 </script>
 	  	  
@@ -205,8 +217,19 @@ function removeBorder()  {
 	  <?php
 	  $All_Teams = $conn->query("SELECT * FROM `TEAMS`");
 	  	while ($row = mysqli_fetch_array($All_Teams))
-	  	 	echo '<option value="'.$row['TEAM_NAME'].'" />';
+	  	 	echo '<option value="'.replaceSpacesWith_($row['TEAM_NAME']).'" />';
 	  ?>
-</datalist>		    
+	  
+	   
+</datalist>
+
+<?php 
+	
+	function replaceSpacesWith_($x) {
+	    return str_replace(" ","_", $x);
+	}
+?>
+
+		    
 </body>
 </html>

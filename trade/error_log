@@ -148,3 +148,19 @@
 [26-Dec-2018 22:13:16 UTC] PHP Notice:  Undefined variable: CURRENT_PRICE in /home/pju37s1wsyzx/public_html/trade/index.php on line 48
 [26-Dec-2018 22:13:16 UTC] PHP Notice:  Undefined variable: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/trade/index.php on line 50
 [26-Dec-2018 22:13:16 UTC] PHP Notice:  Undefined variable: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/trade/index.php on line 60
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/validateLogin_validateTeamId.php on line 13
+[03-Jan-2019 02:00:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/validateLogin_validateTeamId.php on line 15
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: TEAM_NAME in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/validateLogin_validateTeamId.php on line 23
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/validateLogin_validateTeamId.php on line 34
+[03-Jan-2019 02:00:09 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/pju37s1wsyzx/public_html/trade/Php_Scripts/validateLogin_validateTeamId.php on line 35
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: TEAM_NAME in /home/pju37s1wsyzx/public_html/trade/index.php on line 47
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: URL in /home/pju37s1wsyzx/public_html/trade/index.php on line 47
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: CURRENT_PRICE in /home/pju37s1wsyzx/public_html/trade/index.php on line 48
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/trade/index.php on line 50
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: SHARES_OUTSTANDING in /home/pju37s1wsyzx/public_html/trade/index.php on line 60
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/trade/index.php on line 61
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: ISTEAMLOCKED in /home/pju37s1wsyzx/public_html/trade/index.php on line 64
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: TEAM_ID in /home/pju37s1wsyzx/public_html/trade/index.php on line 74
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: ISTEAMLOCKED in /home/pju37s1wsyzx/public_html/trade/index.php on line 77
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: TEAM_NAME in /home/pju37s1wsyzx/public_html/trade/index.php on line 91
+[03-Jan-2019 02:00:09 UTC] PHP Notice:  Undefined variable: TEAM_NAME in /home/pju37s1wsyzx/public_html/trade/index.php on line 120

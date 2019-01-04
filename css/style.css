@@ -20,6 +20,9 @@
 ^^ FOR FLOATING PLACEHOLDERS
 */
  
+ #recoverPassword:hover {
+	cursor: pointer;
+}
  
  @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
@@ -185,12 +188,24 @@
 	}
 	
 	
+	.my-hr { 
+		display: none;
+	}
+
+	.floatingLbl {cursor: text;}
+
+
+	
+	
 	@media screen and (max-width: 600px) {
 	
-	 .header {
+.header {
 	padding: 20px;
-	
 	font-family: 'Alfa Slab One';
+}
+
+.header h1 {
+	font-size: 1.6em;
 }
 	
 	.app {
@@ -203,7 +218,7 @@
 	
 	.how2Play {
 		margin: auto;
-		width: 99%;
+		width: 100%;
 		float: none;
 		margin-top: 80px;
 	}
@@ -224,6 +239,42 @@
 		text-align: center;
  }
  
-
-
+ 	
+	.col-md-6 {
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	
 }
+
+
+
+@media (max-width: 991.98px) { 
+
+	.my-hr {
+	
+	display: block;
+	--base-size: 160; /* Размер */
+	--base-color: darkblue; /* Цвет */
+	--base-line-size: calc(var(--base-size) / 100 * 1px);
+	--base-circle-size: calc(var(--base-size) / 50 * 1px);
+	--line: linear-gradient(var(--base-color), var(--base-color));
+	--circle-center: radial-gradient(var(--base-circle-size) at 50% 50%, var(--base-color), var(--base-color) 85%, transparent);
+	--circle-left: radial-gradient(var(--base-circle-size) at 40% 50%, var(--base-color), var(--base-color) 85%, transparent);
+	--circle-right: radial-gradient(var(--base-circle-size) at 60% 50%, var(--base-color), var(--base-color) 85%, transparent);
+	--line-size: 25% var(--base-line-size);
+	--circle-size: auto;
+	
+	
+	margin: 1em auto;
+	width: calc(var(--base-size) * 1px);
+	height: calc(var(--base-size) / 10 * 1px);
+	background-image: var(--line), var(--circle-left), var(--circle-center), var(--circle-right), var(--line);
+	background-size: var(--line-size), var(--circle-size), var(--circle-size), var(--circle-size), var(--line-size);
+	background-position: left center, center center, center center, center center, right center;
+	background-repeat: no-repeat;
+	margin-top: 80px;
+}
+
+ }

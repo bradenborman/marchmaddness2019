@@ -20,6 +20,8 @@ $(document).ready(function(){
 
 function searchTeam() {
 	var team = $("#searchINPUT").val()
+	
+	team = team.split(' ').join('_')
 	var id = "#"  + team
 	var distance = $(id).offset().top
 		

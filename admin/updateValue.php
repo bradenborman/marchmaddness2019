@@ -75,7 +75,7 @@
 					  <input required   readonly type="text" class="form-control" name="oldValue" id="oldValue">
 					  </div>
 					   <div class="col-sm-6">
-					  <label for="newValue">New Value:</label>
+					  <label for="newValue">Next Round Value:</label>
 					  <input required  type="number" class="form-control" name="newValue" id="newValue">
 					  </div>
 					 </div>		<br />	<br />

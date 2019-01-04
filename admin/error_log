@@ -68,3 +68,6 @@
 [27-Dec-2018 23:23:43 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
 [27-Dec-2018 23:23:49 UTC] PHP Warning:  require(../Php_Scripts/getCurrentRound.php): failed to open stream: No such file or directory in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
 [27-Dec-2018 23:23:49 UTC] PHP Fatal error:  require(): Failed opening required '../Php_Scripts/getCurrentRound.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/pju37s1wsyzx/public_html/admin/Php_Scripts/navbar.php on line 3
+[01-Jan-2019 19:06:52 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 54
+[01-Jan-2019 19:08:20 UTC] PHP Parse error:  syntax error, unexpected 'LOCKED' (T_STRING), expecting ',' or ';' in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 54
+[01-Jan-2019 19:08:25 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/pju37s1wsyzx/public_html/admin/lockunlock.php on line 54

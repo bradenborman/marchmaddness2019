@@ -49,7 +49,11 @@
 								while ($row = mysqli_fetch_array($Teams)) {
 									$TEAM_ID = $row['TEAM_ID'];
 									$TEAM_NAME = $row['TEAM_NAME'];
-									echo '<option value="'.$TEAM_ID.'">'.$TEAM_NAME.'</option>';
+									$isLocked = $row['ISTEAMLOCKED'];								
+									if($isLocked)
+										echo '<option value="'.$TEAM_ID.'">LOCKED | '.$TEAM_NAME.'</option>';
+									else 
+										echo '<option value="'.$TEAM_ID.'">'.$TEAM_NAME.'</option>';
 								}
 	
 							?>
