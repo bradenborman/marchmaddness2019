@@ -19,13 +19,29 @@ Duke VS Saint Mary's
 Duke current cost per share  = $7,500
 Saint Mary's current cost per share  = $2,200
 
-**Example One:**
+**Example ONE:**
 
 | DUKE        | Saint Mary's       |
 | ------------- |:-------------:|
-| Favored by 6 and won by 15       | Duke favored by 6 and lost by 15   |
+| Favored by 6 and won by 15       | Duke favored by 6. Lost by 15   |
 | (15-6=9) => 9 * 100 = 900        | (15-6=9) => 9 * 100 = 900      |
-| $7,500 + 900 = $8,400            | $2,200 - 900 = $8,400      |  
+| $7,500 + 900 = $8,400            | $2,200 - 900 = $1,300      |  
 | **Duke up 12%**                 | **Saint Mary's down 40.9%**     |  
+
+
+**Example TWO:**
+
+| DUKE        | Saint Mary's       |
+| ------------- |:-------------:|
+| Favored by 6 and lost by 5      | Duke favored by 6. Won by 5   |
+| (6 - -5 = 11) => 11 * 100 = 1100        | (6 - -5 = 11) => 11 * 100 = 1100   |
+| $7,500 - 1100 = $6,400            | $2,200 + 1100 = $3,300      |  
+| **Duke down -14.6%**                 | **Saint Mary's up 50%**     |  
+
+
+Cheaper teams have higher reward potential. Buy they are cheap for a reason ;)
+
+
+###Have fun playing! 
 
 
