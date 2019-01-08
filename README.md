@@ -17,7 +17,9 @@ The way the new price is determined, I look at the vegas odds and then do some m
 Duke VS Saint Mary's
 
 Duke current cost per share  = $7,500
+
 Saint Mary's current cost per share  = $2,200
+
 
 **Example ONE:**
 
