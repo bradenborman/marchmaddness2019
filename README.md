@@ -44,6 +44,6 @@ Saint Mary's current cost per share  = $2,200
 Cheaper teams have higher reward potential. Buy they are cheap for a reason ;)
 
 
-###Have fun playing! 
+#### Have fun playing! 
 
 
