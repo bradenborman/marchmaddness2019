@@ -26,6 +26,6 @@ Saint Mary's current cost per share  = $2,200
 | Favored by 6 and won by 15       | Duke favored by 6 and lost by 15   |
 | (15-6=9) => 9 * 100 = 900        | (15-6=9) => 9 * 100 = 900      |
 | $7,500 + 900 = $8,400            | $2,200 - 900 = $8,400      |  
-| **Duke up 12 %**                 | -40.9%      |  
+| **Duke up 12%**                 | **Saint Mary's down 40.9%**     |  
 
 
