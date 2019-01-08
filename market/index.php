@@ -115,7 +115,7 @@
             
             
             
-               <h1 class="card-header"><?php if (in_array($team_id, $MyTeams)) { echo '<i style="font-size: .8em;" title="You own some of this team" class="fas fa-star"></i>';} echo $row['TEAM_NAME']. "<br>";  ?></h1>
+               <h1 class="card-header <?php if($row['TEAM_IS_KNOCKED_OUT']) echo 'strike';  ?>"><?php if (in_array($team_id, $MyTeams)) { echo '<i style="font-size: .8em;" title="You own some of this team" class="fas fa-star"></i>';} echo $row['TEAM_NAME']. "<br>";  ?></h1>
                <div class="card-img-top" id="<?php echo $row['TEAM_NAME'];  ?>"></div>
                <div class="card-body">
                   <!-- Links -->

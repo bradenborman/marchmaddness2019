@@ -160,7 +160,7 @@ while ($r = mysqli_fetch_array($User_sql)){
 							  <a class="nav-link" href="../trade/history">Transaction History</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link" href="../user-update/index.html">My Information</a>
+							  <a class="nav-link" href="../user-update/">My Information</a>
 							</li>
 							<li class="nav-item">
 							  <a class="nav-link" href="https://cbbbluechips.com/rules.pdf">Extended Rules</a>

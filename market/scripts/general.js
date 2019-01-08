@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('input:checkbox').change(
 		function(){
 			if ($(this).is(':checked')) 
-				hideCharts() 
+				hideCharts() 				
 			else
 				showCharts()
 	});
@@ -32,8 +32,10 @@ function searchTeam() {
  
 function hideCharts()  {
 	$(".card-img-top").hide();
+	$("#searchINPUT").prop('disabled', true);
 }
 
 function showCharts()  {
 	$(".card-img-top").show();
+	$("#searchINPUT").prop('disabled', false);
 }

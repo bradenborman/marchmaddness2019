@@ -31,6 +31,7 @@ position: -webkit-sticky; /* Safari */
   top: 0;
    background-color: #f2f2f2;
      padding: 20px;
+     z-index: 99;
 }
 
 
@@ -79,13 +80,35 @@ position: -webkit-sticky; /* Safari */
 
 
 @media screen and (max-width: 600px) {
-  .showSmall {
-	display: block;
+	  .showSmall {
+		display: block;
+		font-weight: bold;
+		
+	}
 }
+
+
+@media(max-width: 480px) {
+td {
+    display:block;
+    text-align: center;
+    font-size: 1.4em;
+    border-left: 4px solid black;
+  }
+  
+  tr {
+  	border-bottom: 2px solid black;
+  }
+  
+  th {
+    display: none;
+  }
+  
+  
+  .name {
+  	font-weight: bold;
+  }
 }
-
-
-
 
 
 

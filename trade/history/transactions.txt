@@ -33,3 +33,4 @@
 21 Brendan Borman Buy Tennessee 18 81000 01-02-19 07:37:09pm
 1 Braden Borman Buy Auburn 4 22800 01-02-19 08:23:38pm
 1 Braden Borman Sell Auburn 4 22800 01-02-19 08:23:49pm
+1 Braden Borman Sell Wisconsin 7 42000 01-06-19 04:12:32pm
