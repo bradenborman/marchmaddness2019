@@ -12,7 +12,7 @@ There will be 67 games played and 67 chances to make money.
 
 The way the new price is determined, I look at the vegas odds and then do some math with the winning margin. If the winning team was favored by 5 and won by 9. I split the difference, then add mulitpled by 100. Same to the lossing team, just subtracting instead. 
 
-###Examples:
+### Examples:
 
 Duke VS Saint Mary's
 
